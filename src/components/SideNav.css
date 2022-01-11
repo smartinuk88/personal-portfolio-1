@@ -1,0 +1,30 @@
+.sideNav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 5rem;
+  height: 100%;
+  border-right: 1px solid #434343;
+  z-index: 99;
+  overflow-x: hidden;
+}
+
+.sideNav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+.sideNav-list-item {
+  border-top: 1px solid #434343;
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
