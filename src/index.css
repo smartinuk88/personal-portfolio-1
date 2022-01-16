@@ -16,8 +16,11 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #191919;
-  color: #fff;
+  background: linear-gradient(to bottom, #000, #04252c);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  color: #96c8fb;
   line-height: 1.4;
   font-size: 1.25;
 }

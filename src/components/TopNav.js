@@ -1,11 +1,14 @@
 import "./TopNav.css";
 import DownloadIcon from "@mui/icons-material/Download";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
 function TopNav() {
   return (
     <nav className="topNav">
-      <div className="topNav__logo-container">
-        <p className="topNav__logo">SM</p>
+      <div className="topNav__theme-switch-container">
+        <div className="topNav__theme-switch-btn">
+          <LightModeIcon sx={{ color: "#96c8fb" }} />
+        </div>
       </div>
 
       <ul className="topNav__nav-list">

@@ -3,14 +3,15 @@
   position: fixed;
   top: 0;
   align-items: center;
+  flex-direction: row-reverse;
   justify-content: flex-start;
-  border-bottom: 1px solid #434343;
+  border-bottom: 1px solid #053841;
   width: 100%;
   height: 5rem;
   z-index: 100;
 }
 
-.topNav__logo-container {
+.topNav__theme-switch-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +19,34 @@
   width: 5rem;
   font-size: 2.25rem;
   font-weight: 900;
+  background: linear-gradient(to bottom, #96c8fb, #ddbdfc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s;
+}
+
+.topNav__theme-switch-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #96c8fb;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding: 10px;
+  border-radius: 50%;
+  background: transparent;
+
+  overflow: hidden;
+}
+
+.topNav__theme-switch-container:hover {
+  box-shadow: inset 0 0 0 3px #96c8fb;
 }
 
 .topNav__nav-list {
@@ -33,16 +62,22 @@
   height: 100%;
   display: flex;
   align-items: center;
-  border-right: 1px solid #434343;
+  border-right: 1px solid #053841;
   overflow: hidden;
   border-bottom: none;
+  transition: all 0.4s;
+}
+
+.topNav__nav-list > li:hover {
+  box-shadow: inset 0 0 0 3px #96c8fb;
+  opacity: 0.7;
 }
 
 .topNav__nav-link:link,
-.topNav__nav-link:active {
+.topNav__nav-link:visited {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #96c8fb;
   font-size: 1.5rem;
 }
 

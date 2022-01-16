@@ -15,7 +15,7 @@ function SideNav() {
           >
             <LinkedInIcon
               className="sideNav__social-link"
-              sx={{ color: "#fff" }}
+              sx={{ color: "#96c8fb" }}
               fontSize="large"
             />
           </a>
@@ -29,7 +29,7 @@ function SideNav() {
           >
             <GitHubIcon
               className="sideNav__social-link"
-              sx={{ color: "#fff" }}
+              sx={{ color: "#96c8fb" }}
               fontSize="large"
             />
           </a>
