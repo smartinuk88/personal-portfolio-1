@@ -1,0 +1,80 @@
+.project {
+  display: flex;
+  border: 1px solid #053841;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2.4rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.project__projectContainer {
+  flex: 0.9;
+}
+
+.project__techLogoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 0.1;
+  height: 100%;
+  border-left: 1px solid #053841;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.project__imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  border-top: 1px solid #053841;
+  overflow: hidden;
+}
+
+.project__img {
+  width: 100%;
+  min-width: 400px;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.project__linksContainer {
+  display: flex;
+  width: 100%;
+}
+
+.project__linksContainer > div {
+  width: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.project__linksContainer > div:hover {
+  background: linear-gradient(to bottom, #96c8fb, #ddbdfc);
+  color: #053841;
+}
+
+.project__linksContainer > div:first-of-type {
+  border-right: 1px solid #053841;
+}
+
+.project__link:link,
+.project__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__link:hover,
+.project__link:active {
+  background: linear-gradient(to bottom, #96c8fb, #ddbdfc);
+  color: #053841;
+}

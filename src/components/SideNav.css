@@ -4,13 +4,56 @@
   top: 0;
   right: 0;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 5rem;
   height: 100%;
   border-left: 1px solid #053841;
-  z-index: 99;
+  z-index: 100;
   overflow-x: hidden;
+  background: linear-gradient(to bottom, #000, #04252c);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.topNav__theme-switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 5rem;
+  width: 100%;
+  font-size: 2.25rem;
+  font-weight: 900;
+  border-bottom: 1px solid #053841;
+  background: linear-gradient(to bottom, #96c8fb, #ddbdfc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s;
+}
+
+.topNav__theme-switch-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #96c8fb;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding: 10px;
+  border-radius: 50%;
+  background: transparent;
+
+  overflow: hidden;
+}
+
+.topNav__theme-switch-container:hover {
+  box-shadow: inset 0 0 0 3px #96c8fb;
 }
 
 .sideNav > ul {
@@ -30,6 +73,7 @@
   width: 100%;
   text-align: center;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 .sideNav-list-item:hover {

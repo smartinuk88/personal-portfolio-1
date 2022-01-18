@@ -13,7 +13,7 @@ function Header() {
       <div className="header__text-container">
         <h1 className="header__primary-heading">Scott Martin,</h1>
         <h2 className="header__secondary-heading">Front End Developer</h2>
-        <div className="header__line header__line--50"></div>
+        <div className="header__line"></div>
         <a onClick={handleClick} className="header__read-more-link">
           About Me
         </a>
@@ -52,9 +52,7 @@ function Header() {
             </a>
             .
           </p>
-          <div className="header-line"></div>
         </section>
-        <div className="header__line header__line--75"></div>
       </div>
     </header>
   );

@@ -1,0 +1,28 @@
+.techInfo {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #053841;
+}
+
+.techInfo__logos {
+  flex: 0.2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 3px solid #053841;
+}
+
+.techInfo__logo {
+  font-size: 3rem;
+  opacity: 0.9;
+}
+
+.techInfo__info {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.5;
+}

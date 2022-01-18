@@ -1,10 +1,17 @@
 import "./SideNav.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
 function SideNav() {
   return (
     <nav className="sideNav">
+      <div className="topNav__theme-switch-container">
+        <div className="topNav__theme-switch-btn">
+          <LightModeIcon sx={{ color: "#96c8fb" }} />
+        </div>
+      </div>
+
       <ul>
         <li className="sideNav-list-item">
           <a
