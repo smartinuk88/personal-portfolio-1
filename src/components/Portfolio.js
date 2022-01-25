@@ -1,13 +1,11 @@
 import "./Portfolio.css";
-import Project from "./Project";
+import ProjectRow from "./ProjectRow";
 
 function Portfolio() {
   return (
     <div className="portfolio">
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+      <ProjectRow />
+      <ProjectRow />
     </div>
   );
 }
