@@ -3,7 +3,6 @@ import projectImg from "../images/daniel-wirtz-jmmTlAPtNw8-unsplash.jpg";
 import { FaReact } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-import { BsInfoCircle } from "react-icons/bs";
 
 function Project() {
   return (
@@ -17,14 +16,15 @@ function Project() {
           <h2 className="project__title">Project Title</h2>
 
           <div className="project__techLogoContainer">
+            <SiTailwindcss />
             <FaReact />
             <SiFirebase />
-            <SiTailwindcss />
-            <BsInfoCircle />
           </div>
 
           <div className="project__desc">
-            <p>Drag logo here for more info...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>

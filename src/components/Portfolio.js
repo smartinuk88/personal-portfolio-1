@@ -6,6 +6,7 @@ function Portfolio() {
     <div className="portfolio">
       <ProjectRow />
       <ProjectRow />
+      <ProjectRow />
     </div>
   );
 }
