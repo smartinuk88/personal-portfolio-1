@@ -1,19 +1,18 @@
 import TopNav from "./components/TopNav";
 import SideNav from "./components/SideNav";
-import "./App.css";
 import Header from "./components/Header";
-import Portfolio from "./components/Portfolio";
+import ProjectList from "./components/ProjectList";
 import TechList from "./components/TechList";
 
 function App() {
   return (
-    <div className="app">
+    <div className="bg-custom-black font-sans">
       <TopNav />
       <SideNav />
       <main>
         <Header />
+        <ProjectList />
         <TechList />
-        <Portfolio />
       </main>
     </div>
   );

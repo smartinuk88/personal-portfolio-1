@@ -1,7 +1,7 @@
 import "./Portfolio.css";
 import ProjectRow from "./ProjectRow";
 
-function Portfolio() {
+function ProjectList() {
   return (
     <div className="portfolio">
       <ProjectRow />
@@ -11,4 +11,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default ProjectList;
