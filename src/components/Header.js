@@ -20,11 +20,11 @@ function Header() {
         <section>
           <div
             onClick={aboutTextToggleHandler}
-            className="mt-5 text-custom-orange text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-400 mb-6 border-mint hover:text-mint hover:border-custom-orange shadow-sm hover:shadow-lg"
+            className="mt-5 text-custom-orange text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-400 mb-6 border-mint hover:shadow-inner-mint hover:opacity-70 shadow-sm"
           >
             About Me
           </div>
-          <div style={{ display: display }} className="text-md">
+          <div style={{ display: display }} className="text-md w-3/4">
             <p className="mb-2">
               Hi, I'm <span className="font-semibold">Scott</span>.
             </p>
@@ -50,7 +50,7 @@ function Header() {
             </p>
             <p className="mb-2">
               <a
-                className="inline-block font-semibold transition-all duration-400 hover:opacity-80"
+                className="inline-block font-semibold transition-all duration-400 hover:opacity-80 text-fucshia"
                 aria-label="CV on Google Drive"
                 rel="noopener"
                 target="_blank"

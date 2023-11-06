@@ -13,7 +13,12 @@ module.exports = {
     fontFamily: {
       sans: ["Poppins", "sans - serif"],
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        "inner-fucshia": "inset 0 0 0 3px #c662ac",
+        "inner-mint": "inset 0 0 0 3px #4abca0",
+      },
+    },
   },
   plugins: [],
 };
