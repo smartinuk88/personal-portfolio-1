@@ -20,7 +20,7 @@ function Header() {
         <section>
           <div
             onClick={aboutTextToggleHandler}
-            className="mt-5 text-custom-orange text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-400 mb-6 border-mint hover:shadow-inner-mint hover:opacity-70 shadow-sm"
+            className="mt-5 text-custom-orange text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-500 mb-6 border-mint hover:shadow-inner-mint hover:opacity-70 shadow-sm"
           >
             About Me
           </div>
