@@ -22,6 +22,10 @@ body {
   text-transform: uppercase;
 }
 
+p {
+  line-height: 1.6;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -1,11 +1,3 @@
-.project {
-  width: 100%;
-}
-
-.project__projectContainer {
-  display: flex;
-}
-
 .project__infoContainer {
   text-align: center;
   flex: 0.6;
