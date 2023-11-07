@@ -8,10 +8,10 @@ function Header() {
   };
 
   return (
-    <header className="mt-20 py-8 px-12 mb-14">
+    <header className="mb-14">
       <div>
         <h1 className="font-bold text-7xl uppercase text-custom-orange">
-          Scott Martin,
+          Scott Martin
         </h1>
         <h2 className="font-bold text-7xl uppercase text-mint">
           Front End Developer
@@ -20,7 +20,7 @@ function Header() {
         <section>
           <div
             onClick={aboutTextToggleHandler}
-            className="mt-5 text-custom-orange text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-500 border-mint hover:shadow-inner-mint hover:opacity-70 shadow-sm"
+            className="mt-5 text-support-text text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-500 border-mint hover:shadow-inner-mint hover:opacity-70 shadow-sm"
           >
             About Me
           </div>

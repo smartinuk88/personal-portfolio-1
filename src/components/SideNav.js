@@ -21,7 +21,7 @@ function SideNav() {
       />
       <div
         onClick={toggleMenuHandler}
-        className="md:hidden border-l-2 border-fucshia flex justify-center items-center cursor-pointer h-20 w-full text-4xl font-extrabold border-b-2 border-fucshia transition-all duration-500 hover:shadow-inner-fucshia hover:opacity-80"
+        className="md:hidden border-l-2 flex justify-center items-center cursor-pointer h-20 w-full text-4xl font-extrabold border-b-2 border-fucshia transition-all duration-500 hover:shadow-inner-fucshia hover:opacity-80"
       >
         <div className="flex justify-center items-center  h-5 w-5 p-5 text-light">
           <IconButton>

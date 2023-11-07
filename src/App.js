@@ -9,7 +9,7 @@ function App() {
     <div className="bg-custom-black font-sans">
       <TopNav />
       <SideNav />
-      <main>
+      <main className="pt-28 px-12 pb-12 md:pl-12 md:pr-32 lg:pl-24 lg:pr-44">
         <Header />
         <ProjectList />
         <TechList />
