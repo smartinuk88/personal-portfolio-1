@@ -8,16 +8,16 @@ import {
   SiStyledcomponents,
   SiTailwindcss,
 } from "react-icons/si";
-import { BsFillBootstrapFill } from "react-icons/bs";
 import Draggable from "./Draggable";
 import Droppable from "./Droppable";
 import "./TechList.css";
 
 function TechList() {
-  const [draggable, setDraggable] = useState(null);
-  const [isDropped, setIsDropped] = useState(false);
+  const [techInfo, setTechInfo] = useState(null);
+  const [draggedIcon, setDraggedIcon] = useState(null);
+  const [isOver, setIsOver] = useState(false);
 
-  const skillMap = {
+  const techMap = {
     react: {
       name: "React",
       text: "React is great!",
@@ -45,50 +45,65 @@ function TechList() {
     },
   };
 
-  function handleDragEnd(e) {
-    if (e.over && e.over.id === "droppable") {
-      setIsDropped(true);
-      setDraggable(e.active.id);
+  const dragEndHandler = (e) => {
+    let timeoutId;
+    if (e.over && e.over.id === "drop-container") {
+      setTechInfo(e.active.id);
+      clearTimeout(timeoutId);
+      setTimeout(() => {
+        setTechInfo(null);
+      }, 5000);
     }
-  }
+  };
+
+  const dragStartHandler = (e) => {
+    setDraggedIcon(e.active.id);
+    console.log(draggedIcon);
+  };
 
   return (
-    <div className="techList">
-      <DndContext onDragEnd={handleDragEnd}>
-        <div className="techList__logoContainer">
+    <div>
+      <DndContext onDragStart={dragStartHandler} onDragEnd={dragEndHandler}>
+        <div className="flex justify-evenly items-center mb-6 text-5xl">
           <Draggable id="react">
             <FaReact />
           </Draggable>
-          <Draggable id="nextjs">
+          <Draggable id="nextjs" className="cursor-grab">
             <SiNextdotjs />
           </Draggable>
-          <Draggable id="firebase">
+          <Draggable id="firebase" className="cursor-grab">
             <SiFirebase />
           </Draggable>
-          <Draggable id="tailwind">
+          <Draggable id="tailwind" className="cursor-grab">
             <SiTailwindcss />
           </Draggable>
-          <Draggable id="styledComponents">
-            <SiStyledcomponents />
-          </Draggable>
-          <Draggable id="bootstrap">
-            <BsFillBootstrapFill />
-          </Draggable>
-          <Draggable id="redux">
+          <Draggable id="redux" className="cursor-grab">
             <SiRedux />
           </Draggable>
         </div>
 
-        <Droppable id="droppable">
-          {draggable === null ? (
-            <div className="techList__info techList__info--inactive">
-              <h3>Drag a logo here to display more info...</h3>
+        <Droppable id="drop-container" isOver={isOver}>
+          {techInfo === null ? (
+            <div
+              className={`flex flex-col items-center justify-center text-center border-2 border-dotted min-h-12 mb-16 p-4 opacity-70 ${
+                isOver ? "border-mint" : "border-support-text"
+              }`}
+            >
+              <h3 className="text-xl">
+                Drag a logo here to display more tech info...
+              </h3>
             </div>
           ) : (
-            <div className="techList__info">
-              <div className="techList__icon">{skillMap[draggable].image}</div>
-              <h2 className="techList__name">{skillMap[draggable].name}</h2>
-              <h5 className="techList__text">{skillMap[draggable].text}</h5>
+            <div
+              className={`flex flex-col items-center justify-center text-center border-2 border-dotted min-h-12 mb-16 p-4 ${
+                isOver ? "border-mint" : "border-fucshia"
+              }`}
+            >
+              <div className="text-6xl">{techMap[techInfo].image}</div>
+              <h2 className="text-custom-orange text-3xl">
+                {techMap[techInfo].name}
+              </h2>
+              <h5 className="text-support-text">{techMap[techInfo].text}</h5>
             </div>
           )}
         </Droppable>

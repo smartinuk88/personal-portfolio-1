@@ -1,18 +1,16 @@
 import { useDroppable } from "@dnd-kit/core";
+import React from "react";
 
-function DroppableContainer(props) {
+function DroppableContainer({ id, children }) {
   const { isOver, setNodeRef } = useDroppable({
-    id: props.id,
+    id: id,
   });
-  const style = {
-    color: isOver ? "#ddbdfc" : undefined,
-  };
 
-  return (
-    <div ref={setNodeRef} style={style}>
-      {props.children}
-    </div>
-  );
+  const childrenWithProps = React.Children.map(children, (child) => {
+    return React.cloneElement(child, { isOver: isOver });
+  });
+
+  return <div ref={setNodeRef}>{childrenWithProps}</div>;
 }
 
 export default DroppableContainer;
