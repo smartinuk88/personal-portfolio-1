@@ -10,7 +10,11 @@ import {
 } from "react-icons/si";
 import Draggable from "./Draggable";
 import Droppable from "./Droppable";
-import "./TechList.css";
+import {
+  restrictToParentElement,
+  restrictToWindowEdges,
+  snapCenterToCursor,
+} from "@dnd-kit/modifiers";
 
 function TechList() {
   const [techInfo, setTechInfo] = useState(null);
@@ -63,7 +67,11 @@ function TechList() {
 
   return (
     <div>
-      <DndContext onDragStart={dragStartHandler} onDragEnd={dragEndHandler}>
+      <DndContext
+        onDragStart={dragStartHandler}
+        onDragEnd={dragEndHandler}
+        modifiers={[restrictToWindowEdges, snapCenterToCursor]}
+      >
         <div className="flex justify-evenly items-center mb-6 text-5xl">
           <Draggable id="react">
             <FaReact />
