@@ -19,7 +19,8 @@ import {
 function TechList() {
   const [techInfo, setTechInfo] = useState(null);
   const [draggedIcon, setDraggedIcon] = useState(null);
-  const [isOver, setIsOver] = useState(false);
+  const [borderStyle, setBorderStyle] = useState("");
+  const [timeoutId, setTimeoutId] = useState(null);
 
   const techMap = {
     react: {
@@ -50,19 +51,30 @@ function TechList() {
   };
 
   const dragEndHandler = (e) => {
-    let timeoutId;
+    if (timeoutId) {
+      clearTimeout(timeoutId); // Clear the previous timeout if it exists
+    }
     if (e.over && e.over.id === "drop-container") {
       setTechInfo(e.active.id);
-      clearTimeout(timeoutId);
-      setTimeout(() => {
+
+      const newTimeoutId = setTimeout(() => {
         setTechInfo(null);
+        setBorderStyle("border-support-text");
       }, 5000);
+      setTimeoutId(newTimeoutId); // Save the new timeoutId
+      setBorderStyle("border-fucshia");
+    } else {
+      setBorderStyle("border-support-text");
     }
   };
 
   const dragStartHandler = (e) => {
     setDraggedIcon(e.active.id);
-    console.log(draggedIcon);
+    setBorderStyle("border-red-900");
+  };
+
+  const dragOverHandler = (e) => {
+    setBorderStyle("border-mint");
   };
 
   return (
@@ -70,6 +82,7 @@ function TechList() {
       <DndContext
         onDragStart={dragStartHandler}
         onDragEnd={dragEndHandler}
+        onDragOver={dragOverHandler}
         modifiers={[restrictToWindowEdges, snapCenterToCursor]}
       >
         <div className="flex justify-evenly items-center mb-6 text-5xl">
@@ -90,12 +103,11 @@ function TechList() {
           </Draggable>
         </div>
 
-        <Droppable id="drop-container" isOver={isOver}>
+        <Droppable id="drop-container">
           {techInfo === null ? (
             <div
-              className={`flex flex-col items-center justify-center text-center border-2 border-dotted min-h-12 mb-16 p-4 opacity-70 ${
-                isOver ? "border-mint" : "border-support-text"
-              }`}
+              className={`flex flex-col items-center justify-center text-center h-52 mb-16 p-4 border-dotted border-2
+              ${borderStyle} opacity-70`}
             >
               <h3 className="text-xl">
                 Drag a logo here to display more tech info...
@@ -103,9 +115,8 @@ function TechList() {
             </div>
           ) : (
             <div
-              className={`flex flex-col items-center justify-center text-center border-2 border-dotted min-h-12 mb-16 p-4 ${
-                isOver ? "border-mint" : "border-fucshia"
-              }`}
+              className="flex flex-col items-center justify-center text-center h-52 border-2 border-dotted min-h-12 mb-16 p-4 border-fucshia
+              "
             >
               <div className="text-6xl">{techMap[techInfo].image}</div>
               <h2 className="text-custom-orange text-3xl">

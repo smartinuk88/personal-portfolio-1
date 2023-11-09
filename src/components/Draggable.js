@@ -1,11 +1,6 @@
 import { useDraggable } from "@dnd-kit/core";
 
-import {
-  CSS,
-  TouchSensor,
-  MouseSensor,
-  KeyboardSensor,
-} from "@dnd-kit/utilities";
+import { CSS } from "@dnd-kit/utilities";
 
 function Draggable({ id, children }) {
   const { attributes, listeners, setNodeRef, transform, isDragging } =
@@ -17,7 +12,7 @@ function Draggable({ id, children }) {
     transform: CSS.Translate.toString(transform),
     zIndex: isDragging ? 999 : 0,
     cursor: isDragging ? "grabbing" : "grab",
-    scale: isDragging ? "150%" : "100%",
+    scale: isDragging ? "110%" : "100%",
   };
 
   return (
