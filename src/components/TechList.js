@@ -16,8 +16,10 @@ function TechList() {
   const [techInfo, setTechInfo] = useState(null);
   const [borderStyle, setBorderStyle] = useState("");
   const [timeoutId, setTimeoutId] = useState(null);
+  const [dragStarted, setDragStarted] = useState(false);
 
   const dragEndHandler = (e) => {
+    setDragStarted(false);
     if (timeoutId) {
       clearTimeout(timeoutId); // Clear the previous timeout if it exists
     }
@@ -35,8 +37,10 @@ function TechList() {
     }
   };
 
-  const dragStartHandler = (e) => {
-    setBorderStyle("border-custom-orange");
+  const dragStartHandler = () => {
+    setDragStarted(true);
+    setBorderStyle("border-red-900");
+    console.log(borderStyle);
   };
 
   return (
@@ -65,7 +69,11 @@ function TechList() {
         </div>
 
         <Droppable id="drop-container" className="h-52 mb-16">
-          <TechInfo techInfo={techInfo} borderStyle={borderStyle} />
+          <TechInfo
+            techInfo={techInfo}
+            borderStyle={borderStyle}
+            dragStarted={dragStarted}
+          />
         </Droppable>
       </DndContext>
     </div>

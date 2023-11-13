@@ -6,7 +6,12 @@ import {
   SiStyledcomponents,
 } from "react-icons/si";
 
-export default function TechInfo({ techInfo, isOver, borderStyle }) {
+export default function TechInfo({
+  techInfo,
+  isOver,
+  borderStyle,
+  dragStarted,
+}) {
   const techMap = {
     react: {
       name: "React",
@@ -38,7 +43,7 @@ export default function TechInfo({ techInfo, isOver, borderStyle }) {
   return techInfo === null ? (
     <div
       className={`flex border-dotted border-2 items-center justify-center text-center ${
-        isOver ? "border-mint" : ""
+        dragStarted && isOver ? "border-mint" : { borderStyle }
       } h-52 opacity-70`}
     >
       <h3 className={`${isOver && "text-mint"} text-xl`}>
@@ -49,7 +54,9 @@ export default function TechInfo({ techInfo, isOver, borderStyle }) {
     </div>
   ) : (
     <div
-      className={`flex flex-col items-center justify-center space-y-2 text-center h-52 border-dotted border-2 ${borderStyle}`}
+      className={`flex flex-col items-center justify-center space-y-2 text-center h-52 border-dotted border-2 ${
+        isOver ? "border-mint" : { borderStyle }
+      }`}
     >
       <div className="text-5xl">{techMap[techInfo].image}</div>
       <h2 className="text-custom-orange text-3xl">{techMap[techInfo].name}</h2>
