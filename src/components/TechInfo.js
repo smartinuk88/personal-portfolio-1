@@ -60,7 +60,7 @@ export default function TechInfo({
 
   return techInfo === null ? (
     <div
-      className={`flex border-dotted border-2 items-center justify-center text-center ${
+      className={`flex border-dotted border-2 items-center justify-center text-center dark:text-dm-light ${
         isOver ? "border-lm-mint dark:border-dm-mint" : getBorderStyle()
       } h-52 opacity-70`}
     >
@@ -72,7 +72,7 @@ export default function TechInfo({
     </div>
   ) : (
     <div
-      className={`flex flex-col items-center justify-center space-y-2 text-center h-52 border-dotted border-2 ${
+      className={`flex flex-col items-center justify-center space-y-2 text-center dark:text-dm-light h-52 border-dotted border-2 ${
         isOver ? "border-lm-mint dark:border-dm-mint" : getBorderStyle()
       }`}
     >
