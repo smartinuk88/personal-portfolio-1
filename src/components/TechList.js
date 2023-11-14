@@ -29,11 +29,11 @@ function TechList() {
 
       const newTimeoutId = setTimeout(() => {
         setTechInfo(null);
-        setBorderStyle("border-support-text");
+        setBorderStyle("border-lm-support dark:border-dm-support");
       }, 5000);
       setTimeoutId(newTimeoutId); // Save the new timeoutId
 
-      setBorderStyle("border-fucshia");
+      setBorderStyle("border-lm-fucshia dark:border-dm-fucshia");
     }
   };
 

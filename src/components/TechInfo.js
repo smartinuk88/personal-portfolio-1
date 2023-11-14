@@ -42,18 +42,18 @@ export default function TechInfo({
 
   const getBorderStyle = () => {
     if (dragStarted) {
-      return "border-custom-orange";
+      return "border-lm-custom-orange dark:border-dm-custom-orange";
     } else {
-      return borderStyle || "border-support-text";
+      return borderStyle || "border-lm-support dark:border-dm-support";
     }
   };
 
   const getTextColor = () => {
     if (dragStarted) {
       if (isOver) {
-        return "text-mint";
+        return "text-lm-mint dark:text-dm-mint";
       } else {
-        return "text-custom-orange";
+        return "text-lm-custom-orange dark:text-dm-custom-orange";
       }
     }
   };
@@ -61,7 +61,7 @@ export default function TechInfo({
   return techInfo === null ? (
     <div
       className={`flex border-dotted border-2 items-center justify-center text-center ${
-        isOver ? "border-mint" : getBorderStyle()
+        isOver ? "border-lm-mint dark:border-dm-mint" : getBorderStyle()
       } h-52 opacity-70`}
     >
       <h3 className={`${getTextColor()} text-xl`}>
@@ -73,12 +73,16 @@ export default function TechInfo({
   ) : (
     <div
       className={`flex flex-col items-center justify-center space-y-2 text-center h-52 border-dotted border-2 ${
-        isOver ? "border-mint" : getBorderStyle()
+        isOver ? "border-lm-mint dark:border-dm-mint" : getBorderStyle()
       }`}
     >
       <div className="text-5xl">{techMap[techInfo].image}</div>
-      <h2 className="text-custom-orange text-3xl">{techMap[techInfo].name}</h2>
-      <h5 className="text-support-text">{techMap[techInfo].text}</h5>
+      <h2 className="text-lm-custom-orange dark:text-dm-custom-orange text-3xl">
+        {techMap[techInfo].name}
+      </h2>
+      <h5 className="text-lm-support dark:text-dm-support">
+        {techMap[techInfo].text}
+      </h5>
     </div>
   );
 }
