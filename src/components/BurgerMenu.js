@@ -1,8 +1,14 @@
 import CloseIcon from "@mui/icons-material/Close";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DownloadIcon from "@mui/icons-material/Download";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-function BurgerMenu({ isMenuOpen, toggleMenuHandler }) {
+function BurgerMenu({
+  isMenuOpen,
+  toggleMenuHandler,
+  darkMode,
+  toggleDarkModeHandler,
+}) {
   return (
     <div
       className={`fixed top-0 -right-full w-screen h-screen flex flex-col bg-custom-black justify-between items-center z-50 transition-transform duration-500 ease-in-out ${
@@ -13,7 +19,11 @@ function BurgerMenu({ isMenuOpen, toggleMenuHandler }) {
     >
       <div className="fixed top-0 flex justify-between p-8 w-full">
         <div className="flex cursor-pointer justify-center items-center border border-custom-orange h-15 w-15 p-5 rounded-full text-light hover:opacity-80">
-          <LightModeIcon />
+          {darkMode ? (
+            <LightModeIcon onClick={toggleDarkModeHandler} />
+          ) : (
+            <DarkModeIcon onClick={toggleDarkModeHandler} />
+          )}
         </div>
 
         <button

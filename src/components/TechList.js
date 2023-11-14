@@ -33,7 +33,7 @@ function TechList() {
       }, 5000);
       setTimeoutId(newTimeoutId); // Save the new timeoutId
 
-      setBorderStyle("border-mint");
+      setBorderStyle("border-fucshia");
     }
   };
 
