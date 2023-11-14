@@ -11,7 +11,7 @@ function BurgerMenu({
 }) {
   return (
     <div
-      className={`fixed top-0 -right-full w-screen h-screen flex flex-col bg-custom-black justify-between items-center z-50 transition-transform duration-500 ease-in-out ${
+      className={`fixed top-0 -right-full w-screen h-screen flex flex-col dark:bg-custom-black justify-between items-center z-50 transition-transform duration-500 ease-in-out ${
         isMenuOpen
           ? "transform -translate-x-full"
           : " transform translate-x-full"

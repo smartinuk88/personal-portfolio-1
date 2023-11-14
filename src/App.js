@@ -29,11 +29,7 @@ function App() {
   };
 
   return (
-    <div
-      className={`${
-        darkMode && "dark"
-      } bg-lm-light dark:bg-dm-custom-black font-sans`}
-    >
+    <div className="bg-lm-light dark:bg-dm-custom-black font-sans">
       <TopNav />
       <SideNav
         darkMode={darkMode}

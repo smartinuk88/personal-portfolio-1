@@ -10,21 +10,21 @@ function Header() {
   return (
     <header className="mb-14">
       <div>
-        <h1 className="font-bold text-7xl uppercase text-custom-orange">
+        <h1 className="font-bold text-7xl uppercase text-lm-custom-orange dark:text-dm-custom-orange">
           Scott Martin
         </h1>
-        <h2 className="font-bold text-7xl uppercase text-mint">
+        <h2 className="font-bold text-7xl uppercase text-lm-mint dark:text-dm-mint">
           Front End Developer
         </h2>
-        <div className="my-5 block h-1 w-3/4 bg-custom-orange"></div>
+        <div className="my-5 block h-1 w-3/4 bg-lm-custom-orange dark:bg-dm-custom-orange"></div>
         <section>
           <div
             onClick={aboutTextToggleHandler}
-            className="mt-5 text-support-text text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-500 border-mint hover:shadow-inner-mint hover:opacity-70 shadow-sm"
+            className="mt-5 text-lm-support dark:text-dm-support text-lg cursor-pointer w-40 border-2 py-2 px-8 transition-all duration-500 border-lm-mint dark:border-dm-mint hover:shadow-inner-mint hover:opacity-70 shadow-sm"
           >
             About Me
           </div>
-          <div style={{ display: display }} className="text-md w-3/4">
+          <div style={{ display: display }} className="text-md w-3/4 pt-4">
             <p className="mb-2">
               Hi, I'm <span className="font-semibold">Scott</span>.
             </p>
@@ -50,7 +50,7 @@ function Header() {
             </p>
             <p className="mb-2">
               <a
-                className="inline-block font-semibold transition-all duration-400 hover:opacity-80 text-fucshia"
+                className="inline-block font-semibold transition-all duration-400 hover:opacity-80 text-lm-fucshia dark:text-dm-fucshia"
                 aria-label="CV on Google Drive"
                 rel="noopener"
                 target="_blank"
