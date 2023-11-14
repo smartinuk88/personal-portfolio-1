@@ -40,22 +40,40 @@ export default function TechInfo({
     },
   };
 
+  const getBorderStyle = () => {
+    if (dragStarted) {
+      return "border-custom-orange";
+    } else {
+      return borderStyle || "border-support-text";
+    }
+  };
+
+  const getTextColor = () => {
+    if (dragStarted) {
+      if (isOver) {
+        return "text-mint";
+      } else {
+        return "text-custom-orange";
+      }
+    }
+  };
+
   return techInfo === null ? (
     <div
       className={`flex border-dotted border-2 items-center justify-center text-center ${
-        dragStarted && isOver ? "border-mint" : { borderStyle }
+        isOver ? "border-mint" : getBorderStyle()
       } h-52 opacity-70`}
     >
-      <h3 className={`${isOver && "text-mint"} text-xl`}>
-        {isOver
-          ? "Drop logo!"
+      <h3 className={`${getTextColor()} text-xl`}>
+        {dragStarted
+          ? "Drop logo here to display more tech info..."
           : "Drag a logo here to display more tech info..."}
       </h3>
     </div>
   ) : (
     <div
       className={`flex flex-col items-center justify-center space-y-2 text-center h-52 border-dotted border-2 ${
-        isOver ? "border-mint" : { borderStyle }
+        isOver ? "border-mint" : getBorderStyle()
       }`}
     >
       <div className="text-5xl">{techMap[techInfo].image}</div>

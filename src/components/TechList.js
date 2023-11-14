@@ -19,28 +19,26 @@ function TechList() {
   const [dragStarted, setDragStarted] = useState(false);
 
   const dragEndHandler = (e) => {
-    setDragStarted(false);
+    setDragStarted((prevState) => !prevState);
     if (timeoutId) {
       clearTimeout(timeoutId); // Clear the previous timeout if it exists
     }
 
     if (e.over && e.over.id === "drop-container") {
       setTechInfo(e.active.id);
+
       const newTimeoutId = setTimeout(() => {
         setTechInfo(null);
         setBorderStyle("border-support-text");
       }, 5000);
       setTimeoutId(newTimeoutId); // Save the new timeoutId
+
       setBorderStyle("border-mint");
-    } else {
-      setBorderStyle("border-support-text");
     }
   };
 
   const dragStartHandler = () => {
-    setDragStarted(true);
-    setBorderStyle("border-red-900");
-    console.log(borderStyle);
+    setDragStarted((prevState) => !prevState);
   };
 
   return (
