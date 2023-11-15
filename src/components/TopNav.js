@@ -12,7 +12,7 @@ function TopNav() {
             CV <DownloadIcon />
           </a>
         </li>
-        <li className="px-8 h-full cursor-pointer flex items-center border-r-2 border-lm-fucshia dark:border-dm-fucshia overflow-hidden transition duration-500 hover:shadow-inner-fucshia hover:opacity-80">
+        <li className="px-8 h-full cursor-pointer flex items-center border-r-2 border-lm-fucshia dark:border-dm-fucshia overflow-hidden transition-all ease-in-out duration-500 hover:shadow-inner-fucshia hover:opacity-80">
           <a
             aria-label="Link to Email"
             rel="noopener"

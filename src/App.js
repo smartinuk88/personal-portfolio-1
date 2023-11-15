@@ -4,6 +4,7 @@ import SideNav from "./components/SideNav";
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
 import TechList from "./components/TechList";
+import Footer from "./components/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -41,6 +42,7 @@ function App() {
         <ProjectList />
         <TechList />
       </main>
+      <Footer />
     </div>
   );
 }
