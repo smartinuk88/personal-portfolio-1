@@ -5,6 +5,7 @@ import {
   SiTailwindcss,
   SiReactrouter,
   SiRedux,
+  SiTypescript,
 } from "react-icons/si";
 
 export default function TechInfo({
@@ -49,6 +50,24 @@ export default function TechInfo({
         },
       ],
       image: <SiNextdotjs />,
+    },
+    typescript: {
+      name: "Typescript",
+      text: [
+        {
+          header: "Strongly Typed JavaScript",
+          body: "TypeScript extends JavaScript by adding type definitions, making it easier to write more robust and maintainable code. This strong typing allows developers to catch errors at compile time, long before the code is executed.",
+        },
+        {
+          header: "Enhanced Code Quality and Productivity",
+          body: "With its advanced features like enums, interfaces, and generics, TypeScript enhances code quality and developer productivity, facilitating large-scale project development and collaboration among teams.",
+        },
+        {
+          header: "Seamless Integration",
+          body: "TypeScript integrates seamlessly with JavaScript, and its compatibility with existing JavaScript libraries and frameworks makes it an ideal choice for developing complex front-end and server-side applications.",
+        },
+      ],
+      image: <SiTypescript />,
     },
     firebase: {
       name: "Firebase",

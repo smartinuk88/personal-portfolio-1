@@ -7,6 +7,7 @@ import {
   SiRedux,
   SiTailwindcss,
   SiReactrouter,
+  SiTypescript,
 } from "react-icons/si";
 import Draggable from "./Draggable";
 import Droppable from "./Droppable";
@@ -49,18 +50,21 @@ function TechList() {
         onDragEnd={dragEndHandler}
         modifiers={[restrictToWindowEdges, snapCenterToCursor]}
       >
-        <div className="flex justify-evenly items-center mb-6 text-5xl dark:text-dm-light">
+        <div className="flex justify-evenly items-center mb-6 text-3xl md:text-5xl dark:text-dm-light">
           <Draggable id="react">
             <FaReact />
           </Draggable>
           <Draggable id="nextjs" className="cursor-grab">
             <SiNextdotjs />
           </Draggable>
-          <Draggable id="firebase" className="cursor-grab">
-            <SiFirebase />
+          <Draggable id="typescript" className="cursor-grab">
+            <SiTypescript />
           </Draggable>
           <Draggable id="tailwind" className="cursor-grab">
             <SiTailwindcss />
+          </Draggable>
+          <Draggable id="firebase" className="cursor-grab">
+            <SiFirebase />
           </Draggable>
           <Draggable id="redux" className="cursor-grab">
             <SiRedux />

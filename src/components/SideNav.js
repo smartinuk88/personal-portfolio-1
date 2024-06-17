@@ -7,7 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-function SideNav({ darkMode, setDarkMode, toggleDarkModeHandler }) {
+function SideNav({ darkMode, toggleDarkModeHandler }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenuHandler = () => {
@@ -15,7 +15,7 @@ function SideNav({ darkMode, setDarkMode, toggleDarkModeHandler }) {
   };
 
   return (
-    <nav className="md:flex fixed md:border-l-2 md:border-lm-fucshia md:dark:border-dm-fucshia bg-transparent top-0 right-0 flex-col justify-between items-center w-20 h-screen z-50 overflow-x-hidden md:bg-lm-light md:dark:bg-dm-custom-black">
+    <nav className="md:flex fixed md:border-l-2 md:border-lm-fucshia md:dark:border-dm-fucshia bg-transparent top-0 right-0 flex-col justify-between items-center w-20 md:h-screen z-50 overflow-x-hidden md:bg-lm-light md:dark:bg-dm-custom-black">
       <BurgerMenu
         isMenuOpen={isMenuOpen}
         toggleMenuHandler={toggleMenuHandler}
