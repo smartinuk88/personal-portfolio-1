@@ -3,7 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Footer() {
   return (
-    <footer className="flex items-center justify-between px-12 pb-4 md:pl-12 md:pr-32 lg:pl-24 lg:pr-44 w-full text-lm-support dark:text-dm-support">
+    <footer className="flex items-center justify-between px-5 pb-4 md:pl-12 md:pr-32 lg:pl-24 lg:pr-44 w-full text-lm-support dark:text-dm-support">
       <ul className="flex space-x-2">
         <li className="hover:opacity-80 transition-all duration-500">
           <a

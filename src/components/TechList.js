@@ -6,6 +6,7 @@ import {
   SiNextdotjs,
   SiRedux,
   SiTailwindcss,
+  SiReactrouter,
 } from "react-icons/si";
 import Draggable from "./Draggable";
 import Droppable from "./Droppable";
@@ -30,7 +31,7 @@ function TechList() {
       const newTimeoutId = setTimeout(() => {
         setTechInfo(null);
         setBorderStyle("border-lm-support dark:border-dm-support");
-      }, 5000);
+      }, 15000);
       setTimeoutId(newTimeoutId); // Save the new timeoutId
 
       setBorderStyle("border-lm-fucshia dark:border-dm-fucshia");
@@ -63,6 +64,9 @@ function TechList() {
           </Draggable>
           <Draggable id="redux" className="cursor-grab">
             <SiRedux />
+          </Draggable>
+          <Draggable id="reactRouter" className="cursor-grab">
+            <SiReactrouter />
           </Draggable>
         </div>
 

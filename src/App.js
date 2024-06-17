@@ -37,11 +37,13 @@ function App() {
         setDarkMode={setDarkMode}
         toggleDarkModeHandler={toggleDarkModeHandler}
       />
-      <main className="pt-28 px-12 pb-12 md:pl-12 md:pr-32 lg:pl-24 lg:pr-44">
+      <div className="pt-28 px-8 pb-12 md:pl-12 md:pr-32 lg:pl-24 lg:pr-44">
         <Header />
-        <ProjectList />
-        <TechList />
-      </main>
+        <main>
+          <ProjectList />
+          <TechList />
+        </main>
+      </div>
       <Footer />
     </div>
   );

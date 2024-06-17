@@ -10,10 +10,10 @@ function Header() {
   return (
     <header className="mb-14">
       <div>
-        <h1 className="font-bold text-7xl uppercase text-lm-custom-orange dark:text-dm-custom-orange">
+        <h1 className="font-bold text-5xl md:text-7xl uppercase text-lm-custom-orange dark:text-dm-custom-orange">
           Scott Martin
         </h1>
-        <h2 className="font-bold text-7xl uppercase text-lm-mint dark:text-dm-mint">
+        <h2 className="font-bold text-5xl md:text-7xl uppercase text-lm-mint dark:text-dm-mint">
           Front End Developer
         </h2>
         <div className="my-5 block h-1 w-3/4 bg-lm-custom-orange dark:bg-dm-custom-orange"></div>
@@ -24,7 +24,10 @@ function Header() {
           >
             About Me
           </div>
-          <div style={{ display: display }} className="text-md w-3/4 pt-4">
+          <div
+            style={{ display: display }}
+            className="text-md dark:text-dm-support w-full pt-4"
+          >
             <p className="mb-2">
               Hi, I'm <span className="font-semibold">Scott</span>.
             </p>
