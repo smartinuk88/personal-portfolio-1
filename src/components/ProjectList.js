@@ -48,7 +48,7 @@ function ProjectList() {
   return (
     <div className="flex flex-col gap-16 mb-20">
       <ProjectRow
-        title="FlashFluent"
+        title="FlashFluent Flashcard App"
         bullets={flashFluentBullets}
         image={flashFluentImg1}
         techIcons={[FaReact, SiFirebase, SiTailwindcss, SiReactrouter]}
@@ -56,7 +56,7 @@ function ProjectList() {
         liveLink="https://main--stunning-cupcake-ed88e2.netlify.app/"
       />
       <ProjectRow
-        title="Amazon Redesign w/ Oxylabs Webscraper"
+        title="Amazon Redesign Webscraper"
         bullets={amazonBullets}
         image={amazonImg1}
         techIcons={[SiNextdotjs, SiTypescript, SiTailwindcss]}

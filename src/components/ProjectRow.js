@@ -9,20 +9,20 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
   };
 
   return (
-    <div className="xl:h-auto w-full border-2 border-lm-custom-black dark:border-dm-light shadow-md  items-center">
-      <div className="flex flex-col xl:flex-row text-center">
+    <div className="w-full border-2 max-w-6xl mx-auto border-lm-custom-black dark:border-dm-light shadow-md  items-center">
+      <div className="flex flex-col text-center">
         <img
-          className="aspect-w-16 aspect-h-9 w-full h-auto object-contain xl:w-1/2"
+          className="aspect-w-16 aspect-h-9 w-full h-auto object-contain"
           src={image}
           alt={`${title} project screenshot`}
         />
 
-        <div className="flex flex-col justify-between px-4 py-6 leading-normal xl:w-1/2">
+        <div className="flex flex-col justify-between px-4 py-6 lg:px-8 leading-normal">
           <h2 className="mb-4 text-2xl font-bold tracking-tight text-center text-lm-custom-black dark:text-dm-light">
             {title}
           </h2>
 
-          <div className="flex flex-col text-left space-y-2 text-xs lg:text-md text-lm-support dark:text-dm-support mb-6">
+          <div className="flex flex-col text-left space-y-2 text-xs lg:text-base text-lm-support dark:text-dm-support mb-6">
             {bullets.map((bullet) => (
               <p>
                 <span className="font-bold">{bullet.header}</span>:{" "}
