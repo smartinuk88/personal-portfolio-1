@@ -29,7 +29,7 @@ function Footer() {
       </ul>
       <div>
         <p className="text-xs">
-          Copyright 2023 Scott Martin. All rights reserved.
+          Copyright 2024 Scott Martin. All rights reserved.
         </p>
       </div>
     </footer>
