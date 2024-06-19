@@ -7,7 +7,7 @@ function TopNav() {
         <li className="px-8 h-full cursor-pointer flex items-center border-r-2 border-lm-fucshia dark:border-dm-fucshia overflow-hidden transition duration-500 hover:shadow-inner-fucshia hover:opacity-80">
           <a
             className="text-xl no-underline text-lm-custom-black dark:text-dm-light"
-            href="https://drive.google.com/file/d/1QEs4aXA52gVyORLV_9t7Tr8ZwO2kI_7v/view?usp=sharing"
+            href="https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing"
             target="_blank"
           >
             CV <DownloadIcon />
