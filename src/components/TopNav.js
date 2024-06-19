@@ -9,6 +9,7 @@ function TopNav() {
             className="text-xl no-underline text-lm-custom-black dark:text-dm-light"
             href="https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             CV <DownloadIcon />
           </a>
@@ -16,7 +17,7 @@ function TopNav() {
         <li className="px-8 h-full cursor-pointer flex items-center border-r-2 border-lm-fucshia dark:border-dm-fucshia overflow-hidden transition-all ease-in-out duration-500 hover:shadow-inner-fucshia hover:opacity-80">
           <a
             aria-label="Link to Email"
-            rel="noopener"
+            rel="noreferrer"
             className="text-xl no-underline text-lm-custom-black dark:text-dm-light"
             href="mailto:scottmartinwebdevelopment@gmail.com"
           >

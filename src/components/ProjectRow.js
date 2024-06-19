@@ -43,8 +43,8 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
         <div className="text-lg w-full h-full border-r border-lm-custom-black dark:border-dm-light">
           <a
             href={liveLink}
-            rel="noopener"
             target="_blank"
+            rel="noreferrer"
             className="flex justify-center items-center w-full h-full hover:opacity-80 transition-all duration-500 text-lm-custom-black dark:text-lm-light hover:text-lm-light dark:hover:text-dm-custom-black hover:bg-lm-custom-black dark:hover:bg-dm-light"
           >
             See Live
@@ -53,7 +53,7 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
         <div className="text-lg w-full h-full border-l border-lm-custom-black dark:border-dm-light">
           <a
             href={codeLink}
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             className="flex justify-center items-center w-full h-full hover:opacity-80 transition-all duration-500 text-lm-custom-black dark:text-dm-light hover:text-lm-light dark:hover:text-dm-custom-black hover:bg-lm-custom-black dark:hover:bg-dm-light"
           >

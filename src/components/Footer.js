@@ -8,8 +8,8 @@ function Footer() {
         <li className="hover:opacity-80 transition-all duration-500">
           <a
             aria-label="Linkedin"
-            rel="noopener"
             target="_blank"
+            rel="noreferrer"
             href="https://www.linkedin.com/in/scott-martin-6680b322a/"
           >
             <LinkedInIcon />
@@ -19,7 +19,7 @@ function Footer() {
         <li className="hover:opacity-80 transition-all duration-500">
           <a
             aria-label="Github"
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             href="https://github.com/smartinuk88"
           >

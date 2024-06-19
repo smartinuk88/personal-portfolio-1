@@ -68,9 +68,9 @@ function Header() {
               <a
                 className="inline-block bold transition-all duration-400 hover:opacity-80 text-lm-fucshia dark:text-dm-fucshia"
                 aria-label="CV on Google Drive"
-                rel="noopener"
+                rel="noreferrer"
                 target="_blank"
-                href=""
+                href="https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing"
               >
                 CV right here
               </a>
