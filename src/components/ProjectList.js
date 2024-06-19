@@ -61,7 +61,7 @@ function ProjectList() {
         image={amazonImg1}
         techIcons={[SiNextdotjs, SiTypescript, SiTailwindcss]}
         codeLink="https://github.com/smartinuk88/amazon-redesign-oxylabs-scraper"
-        liveLink="https://main--stunning-cupcake-ed88e2.netlify.app/"
+        liveLink="https://amazon-redesign-oxylabs-scraper.vercel.app/"
       />
     </div>
   );
