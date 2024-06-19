@@ -40,7 +40,7 @@ function BurgerMenu({
             <a
               className="text-xl"
               aria-label="Linkedin"
-              rel="noopener"
+              rel="noreferrer"
               target="_blank"
               href="https://www.linkedin.com/in/scott-martin-6680b322a/"
             >
@@ -51,7 +51,7 @@ function BurgerMenu({
             <a
               className="text-xl"
               aria-label="Github"
-              rel="noopener"
+              rel="noreferrer"
               target="_blank"
               href="https://github.com/smartinuk88"
             >
@@ -61,7 +61,9 @@ function BurgerMenu({
           <li className="flex items-center h-20 py-2 px-4 text-center transition duration-500 cursor-pointer hover:opacity-80">
             <a
               className="text-xl no-underline text-lm-custom-black dark:text-dm-light"
-              href="#"
+              target="_blank"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing"
             >
               CV <DownloadIcon />
             </a>
@@ -71,7 +73,7 @@ function BurgerMenu({
               aria-label="Link to Email"
               rel="noopener"
               className="text-xl no-underline text-lm-custom-black dark:text-dm-light"
-              href="mailto:scottmartin.dev@gmail.com"
+              href="mailto:scottmartinwebdevelopment@gmail.com"
             >
               Contact
             </a>

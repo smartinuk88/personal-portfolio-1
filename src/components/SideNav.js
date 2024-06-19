@@ -63,7 +63,7 @@ function SideNav({ darkMode, toggleDarkModeHandler }) {
         <li className="flex items-center justify-center border-t border-lm-fucshia dark:border-dm-fucshia h-20 w-full text-center transition duration-500 cursor-pointer hover:shadow-inner-fucshia hover:opacity-80">
           <a
             aria-label="Github"
-            rrel="noreferrer"
+            rel="noreferrer"
             target="_blank"
             href="https://github.com/smartinuk88"
           >
