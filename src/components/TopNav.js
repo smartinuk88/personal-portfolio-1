@@ -18,7 +18,7 @@ function TopNav() {
             aria-label="Link to Email"
             rel="noopener"
             className="text-xl no-underline text-lm-custom-black dark:text-dm-light"
-            href="mailto:scottmartin.dev@gmail.com"
+            href="mailto:scottmartinwebdevelopment@gmail.com"
           >
             Contact
           </a>
