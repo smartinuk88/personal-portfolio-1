@@ -167,7 +167,7 @@ export default function TechInfo({
         isOver ? "border-lm-mint dark:border-dm-mint" : getBorderStyle()
       } h-52 opacity-70`}
     >
-      <h3 className={`${getTextColor()} text-xl`}>
+      <h3 className={`${getTextColor()} text-lg md:text-xl`}>
         {dragStarted
           ? "Drop logo here to display more tech info..."
           : "Drag a logo here to display more tech info..."}

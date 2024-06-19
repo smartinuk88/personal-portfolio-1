@@ -31,7 +31,7 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
             ))}
           </div>
 
-          <div className="flex justify-between w-2/5 mx-auto text-4xl pb-4">
+          <div className="flex justify-between w-3/5 md:w-2/5 mx-auto text-2xl md:text-4xl pb-4">
             {techIcons.map((IconComponent, index) => (
               <IconComponent key={index} className={getColor(index)} />
             ))}

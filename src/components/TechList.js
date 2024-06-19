@@ -50,7 +50,7 @@ function TechList() {
         onDragEnd={dragEndHandler}
         modifiers={[restrictToWindowEdges, snapCenterToCursor]}
       >
-        <div className="flex justify-evenly items-center mb-6 text-3xl md:text-5xl dark:text-dm-light">
+        <div className="flex justify-evenly items-center mb-6 text-2xl md:text-5xl dark:text-dm-light">
           <Draggable id="react">
             <FaReact />
           </Draggable>

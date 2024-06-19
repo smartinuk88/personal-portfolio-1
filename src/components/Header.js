@@ -66,7 +66,7 @@ function Header() {
             </p>
             <p className="mb-2">
               <a
-                className="inline-block bold transition-all duration-400 hover:opacity-80 text-lm-fucshia dark:text-dm-fucshia"
+                className="inline-block font-bold transition-all duration-400 hover:opacity-80 text-lm-fucshia dark:text-dm-fucshia"
                 aria-label="CV on Google Drive"
                 rel="noreferrer"
                 target="_blank"
