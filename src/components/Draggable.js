@@ -13,6 +13,7 @@ function Draggable({ id, children }) {
     zIndex: isDragging ? 999 : 0,
     cursor: isDragging ? "grabbing" : "grab",
     scale: isDragging ? "110%" : "100%",
+    touchAction: "none",
   };
 
   return (
