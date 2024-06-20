@@ -42,7 +42,7 @@ function BurgerMenu({
               aria-label="Linkedin"
               rel="noreferrer"
               target="_blank"
-              href="https://www.linkedin.com/in/scott-martin-6680b322a/"
+              href="https://www.linkedin.com/in/scott-martin-web-development/"
             >
               LinkedIn
             </a>
