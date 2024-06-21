@@ -39,13 +39,12 @@ function SideNav({ darkMode, toggleDarkModeHandler }) {
         </div>
       </div>
 
-      <div className="hidden md:flex justify-center items-center cursor-pointer h-20 w-full text-4xl font-extrabold border-b-2 border-lm-fucshia dark:border-dm-fucshia transition-all duration-500 hover:shadow-inner-fucshia hover:opacity-80">
+      <div
+        onClick={toggleDarkModeHandler}
+        className="hidden md:flex justify-center items-center cursor-pointer h-20 w-full text-4xl font-extrabold border-b-2 border-lm-fucshia dark:border-dm-fucshia transition-all duration-500 hover:shadow-inner-fucshia hover:opacity-80"
+      >
         <div className="flex justify-center items-center border border-lm-custom-black dark:border-dm-light h-5 w-5 p-5 rounded-full text-lm-custom-black dark:text-dm-light">
-          {darkMode ? (
-            <LightModeIcon onClick={toggleDarkModeHandler} />
-          ) : (
-            <DarkModeIcon onClick={toggleDarkModeHandler} />
-          )}
+          {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
         </div>
       </div>
 
@@ -56,6 +55,7 @@ function SideNav({ darkMode, toggleDarkModeHandler }) {
             rel="noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/scott-martin-web-development/"
+            className="h-full w-full flex items-center justify-center"
           >
             <LinkedInIcon
               className="text-lm-custom-black dark:text-dm-light"
@@ -69,6 +69,7 @@ function SideNav({ darkMode, toggleDarkModeHandler }) {
             rel="noreferrer"
             target="_blank"
             href="https://github.com/smartinuk88"
+            className="h-full w-full flex items-center justify-center"
           >
             <GitHubIcon
               className="text-lm-custom-black dark:text-dm-light"

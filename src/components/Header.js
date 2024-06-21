@@ -26,7 +26,7 @@ function Header() {
           </div>
           <div
             style={{ display: display }}
-            className="text-xs md:text-small dark:text-dm-support w-full pt-4"
+            className="text-xs sm:text-small md:text-base dark:text-dm-support w-full pt-4"
           >
             <p className="mb-2">
               Hi, I'm <span className="font-bold">Scott</span>,
