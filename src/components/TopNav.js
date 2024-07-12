@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 function TopNav() {
   const [isLanguageSelectorVisible, setIsLanguageSelectorVisible] =
     useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const showLanguageSelector = () => {
     setIsLanguageSelectorVisible(true);
@@ -42,7 +42,12 @@ function TopNav() {
           <li className=" h-full cursor-pointer flex items-center border-r-2 border-lm-fucshia dark:border-dm-fucshia overflow-hidden transition duration-500 hover:shadow-inner-fucshia hover:opacity-80 w-20 md:w-auto">
             <a
               className="px-4 md:px-8 text-xl no-underline text-lm-custom-black dark:text-dm-light h-full w-full flex items-center justify-center"
-              href="https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing"
+              href={
+                (i18n.language === "en" &&
+                  "https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing") ||
+                (i18n.language === "es" &&
+                  "https://drive.google.com/file/d/1VuKcy7aYzLxQNVmnw12-rr52iA5bQuEG/view?usp=sharing")
+              }
               target="_blank"
               rel="noreferrer"
             >
