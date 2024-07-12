@@ -168,7 +168,7 @@ const resources = {
           "Implementa debounce y un intervalo de 90 segundos para una sincronización de datos robusta, optimizando las interacciones con el servidor.",
         heading3: "Funcionalidad de racha y Context API",
         body3:
-          "Rastrea el compromiso del usuario con un sistema de rachas motivacionales y utiliza React Context para una gestión de estado simplificada.",
+          "Rastrea el interacción del usuario con un sistema de rachas motivacionales y utiliza React Context para una gestión de estado simplificada.",
       },
       amazon: {
         title: "Amazon Rediseño Webscraper",
