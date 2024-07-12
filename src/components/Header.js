@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 
 function Header() {
   const [display, setDisplay] = useState("none");
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isSpanish = i18n.language === "es";
 
   const aboutTextToggleHandler = () => {
     display === "none" ? setDisplay("block") : setDisplay("none");
@@ -14,7 +15,11 @@ function Header() {
       <h1 className="font-bold text-5xl md:text-7xl uppercase text-lm-custom-orange dark:text-dm-custom-orange">
         Scott Martin
       </h1>
-      <h2 className="font-bold text-5xl md:text-7xl uppercase text-lm-mint dark:text-dm-mint">
+      <h2
+        className={`font-bold ${
+          isSpanish ? "text-4xl md:text-6xl" : "text-5xl md:text-7xl"
+        } uppercase text-lm-mint dark:text-dm-mint`}
+      >
         {t("jobTitle")}
       </h2>
       <div className="my-5 block h-1 w-3/4 bg-lm-custom-orange dark:bg-dm-custom-orange"></div>

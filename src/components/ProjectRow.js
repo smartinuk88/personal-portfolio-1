@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 
 function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isSpanish = i18n.language === "es";
 
   const colors = [
     "text-lm-fucshia dark:text-dm-fucshia",
@@ -44,7 +45,11 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
       </div>
 
       <div className="flex w-full h-16 justify-between text-center border-t-2 border-lm-custom-black dark:border-dm-light">
-        <div className="text-lg w-full h-full border-r border-lm-custom-black dark:border-dm-light">
+        <div
+          className={`${
+            isSpanish ? "" : "text-lg"
+          } w-full h-full border-r border-lm-custom-black dark:border-dm-light`}
+        >
           <a
             href={liveLink}
             target="_blank"
@@ -54,7 +59,11 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
             {t("projectRow.live")}
           </a>
         </div>
-        <div className="text-lg w-full h-full border-l border-lm-custom-black dark:border-dm-light">
+        <div
+          className={`${
+            isSpanish ? "" : "text-lg"
+          } w-full h-full border-l border-lm-custom-black dark:border-dm-light`}
+        >
           <a
             href={codeLink}
             rel="noreferrer"

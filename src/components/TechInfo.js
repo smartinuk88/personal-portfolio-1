@@ -15,7 +15,8 @@ export default function TechInfo({
   borderStyle,
   dragStarted,
 }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isSpanish = i18n.language === "es";
 
   const techMap = {
     react: {
@@ -170,7 +171,11 @@ export default function TechInfo({
         isOver ? "border-lm-mint dark:border-dm-mint" : getBorderStyle()
       } h-52 opacity-70`}
     >
-      <h3 className={`${getTextColor()} text-lg md:text-xl`}>
+      <h3
+        className={`${getTextColor()} ${
+          isSpanish ? "md:text-lg" : "text-lg md:text-xl"
+        }`}
+      >
         {dragStarted ? t("techInfo.drop") : t("techInfo.drag")}
       </h3>
     </div>
