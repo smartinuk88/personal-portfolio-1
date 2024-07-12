@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
+  const { t } = useTranslation();
+
   const colors = [
     "text-lm-fucshia dark:text-dm-fucshia",
     "text-lm-mint dark:text-dm-mint",
@@ -47,7 +51,7 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
             rel="noreferrer"
             className="flex justify-center items-center w-full h-full hover:opacity-80 transition-all duration-500 text-lm-custom-black dark:text-lm-light hover:text-lm-light dark:hover:text-dm-custom-black hover:bg-lm-custom-black dark:hover:bg-dm-light"
           >
-            See Live
+            {t("projectRow.live")}
           </a>
         </div>
         <div className="text-lg w-full h-full border-l border-lm-custom-black dark:border-dm-light">
@@ -57,7 +61,7 @@ function ProjectRow({ image, title, bullets, techIcons, codeLink, liveLink }) {
             target="_blank"
             className="flex justify-center items-center w-full h-full hover:opacity-80 transition-all duration-500 text-lm-custom-black dark:text-dm-light hover:text-lm-light dark:hover:text-dm-custom-black hover:bg-lm-custom-black dark:hover:bg-dm-light"
           >
-            View Code
+            {t("projectRow.code")}
           </a>
         </div>
       </div>

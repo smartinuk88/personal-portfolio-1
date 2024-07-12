@@ -2,6 +2,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DownloadIcon from "@mui/icons-material/Download";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { useTranslation } from "react-i18next";
 
 function BurgerMenu({
   isMenuOpen,
@@ -9,9 +10,16 @@ function BurgerMenu({
   darkMode,
   toggleDarkModeHandler,
 }) {
+  const { t, i18n } = useTranslation();
+
+  const lngs = {
+    en: { nativeName: "English" },
+    es: { nativeName: "Español" },
+  };
+
   return (
     <div
-      className={`fixed top-0 -right-full w-screen h-screen flex flex-col bg-lm-light dark:bg-dm-custom-black justify-between items-center z-50 transition-transform duration-500 ease-in-out ${
+      className={`fixed top-0 -right-full w-screen h-screen flex flex-col bg-lm-light dark:bg-dm-custom-black justify-around items-center z-50 transition-transform duration-500 ease-in-out ${
         isMenuOpen
           ? "transform -translate-x-full"
           : " transform translate-x-full"
@@ -34,8 +42,8 @@ function BurgerMenu({
         </button>
       </div>
 
-      <nav>
-        <ul className="flex space-y-2 flex-col items-center list-none h-screen w-screen justify-center text-lm-custom-black dark:text-dm-light">
+      <nav className="flex-1">
+        <ul className="flex space-y-2 flex-col items-center list-none h-full w-screen justify-center text-lm-custom-black dark:text-dm-light">
           <li className="flex items-center h-20 py-2 px-4 text-center transition duration-500 cursor-pointer hover:opacity-80">
             <a
               className="text-xl"
@@ -75,11 +83,28 @@ function BurgerMenu({
               className="text-xl no-underline text-lm-custom-black dark:text-dm-light"
               href="mailto:scottmartinwebdevelopment@gmail.com"
             >
-              Contact
+              {t("contact")}
             </a>
           </li>
         </ul>
       </nav>
+      <div className="py-8">
+        <div className="flex space-x-8">
+          {Object.keys(lngs).map((lng) => (
+            <button
+              className={`text-lm-custom-black dark:text-dm-light ${
+                i18n.resolvedLanguage === lng ? "underline" : "hover:opacity-80"
+              }`}
+              type="submit"
+              key={lng}
+              onClick={() => i18n.changeLanguage(lng)}
+              disabled={i18n.resolvedLanguage === lng}
+            >
+              {lngs[lng].nativeName}
+            </button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

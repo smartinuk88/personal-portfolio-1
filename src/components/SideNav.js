@@ -27,9 +27,9 @@ function SideNav({ darkMode, toggleDarkModeHandler }) {
       />
       <div
         onClick={toggleMenuHandler}
-        className="md:hidden border-l-2 flex justify-center items-center cursor-pointer h-20 w-full text-4xl font-extrabold border-b-2 border-lm-fucshia dark:border-dm-fucshia transition-all duration-500 hover:shadow-inner-fucshia hover:opacity-80"
+        className="md:hidden border-l-2 flex justify-center items-center cursor-pointer h-20 w-20 text-4xl font-extrabold border-b-2 border-lm-fucshia dark:border-dm-fucshia transition-all duration-500 hover:shadow-inner-fucshia hover:opacity-80"
       >
-        <div className="flex justify-center items-center  h-5 w-5 p-5 text-lm-custom-black dark:text-dm-light">
+        <div className="flex justify-center items-center h-5 w-5 p-5 text-lm-custom-black dark:text-dm-light">
           <IconButton>
             <MenuIcon
               className="text-lm-custom-black dark:text-dm-light"

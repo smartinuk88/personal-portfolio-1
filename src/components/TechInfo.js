@@ -7,6 +7,7 @@ import {
   SiRedux,
   SiTypescript,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 export default function TechInfo({
   techInfo,
@@ -14,21 +15,23 @@ export default function TechInfo({
   borderStyle,
   dragStarted,
 }) {
+  const { t } = useTranslation();
+
   const techMap = {
     react: {
       name: "React",
       text: [
         {
-          header: "Component-Based Architecture",
-          body: "Facilitates building reusable UI components that manage their state, making it easy to create dynamic user interfaces.",
+          header: t("techInfo.react.heading1"),
+          body: t("techInfo.react.body1"),
         },
         {
-          header: "Virtual DOM",
-          body: "Optimizes rendering processes to enhance performance, ensuring smooth updates and faster UI response.",
+          header: t("techInfo.react.heading2"),
+          body: t("techInfo.react.body2"),
         },
         {
-          header: "Extensive Ecosystem",
-          body: "Supported by a vast range of tools and libraries, including server-side rendering, state management, and testing utilities.",
+          header: t("techInfo.react.heading3"),
+          body: t("techInfo.react.body3"),
         },
       ],
       image: <FaReact />,
@@ -37,16 +40,16 @@ export default function TechInfo({
       name: "NextJS",
       text: [
         {
-          header: "Server-Side Rendering (SSR)",
-          body: "Boosts performance and SEO by pre-rendering pages on the server, providing faster page loads and initial rendering.",
+          header: t("techInfo.nextjs.heading1"),
+          body: t("techInfo.nextjs.body1"),
         },
         {
-          header: "Static Site Generation (SSG)",
-          body: "Supports generating HTML at build time, enabling fast page loads and seamless integration with CDNs.",
+          header: t("techInfo.nextjs.heading2"),
+          body: t("techInfo.nextjs.body2"),
         },
         {
-          header: "API Routes",
-          body: "Simplifies backend development by allowing the creation of API endpoints as serverless functions directly within the Next.js project.",
+          header: t("techInfo.nextjs.heading3"),
+          body: t("techInfo.nextjs.body3"),
         },
       ],
       image: <SiNextdotjs />,
@@ -55,16 +58,16 @@ export default function TechInfo({
       name: "Typescript",
       text: [
         {
-          header: "Strongly Typed JavaScript",
-          body: "TypeScript extends JavaScript by adding type definitions, making it easier to write more robust and maintainable code. This strong typing allows developers to catch errors at compile time, long before the code is executed.",
+          header: t("techInfo.typescript.heading1"),
+          body: t("techInfo.typescript.body1"),
         },
         {
-          header: "Enhanced Code Quality and Productivity",
-          body: "With its advanced features like enums, interfaces, and generics, TypeScript enhances code quality and developer productivity, facilitating large-scale project development and collaboration among teams.",
+          header: t("techInfo.typescript.heading2"),
+          body: t("techInfo.typescript.body2"),
         },
         {
-          header: "Seamless Integration",
-          body: "TypeScript integrates seamlessly with JavaScript, and its compatibility with existing JavaScript libraries and frameworks makes it an ideal choice for developing complex front-end and server-side applications.",
+          header: t("techInfo.typescript.heading3"),
+          body: t("techInfo.typescript.body3"),
         },
       ],
       image: <SiTypescript />,
@@ -73,16 +76,16 @@ export default function TechInfo({
       name: "Firebase",
       text: [
         {
-          header: "Comprehensive App Development Platform",
-          body: "Offers a suite of tools including hosting, databases, analytics, and more, to build and scale apps efficiently.",
+          header: t("techInfo.firebase.heading1"),
+          body: t("techInfo.firebase.body1"),
         },
         {
-          header: "Real-Time Database & Firestore",
-          body: "Enables real-time data syncing across all clients instantly, ideal for dynamic and collaborative applications.",
+          header: t("techInfo.firebase.heading2"),
+          body: t("techInfo.firebase.body2"),
         },
         {
-          header: "Authentication and Security",
-          body: "Supports authentication with various providers and robust access control capabilities for secure app development.",
+          header: t("techInfo.firebase.heading3"),
+          body: t("techInfo.firebase.body3"),
         },
       ],
       image: <SiFirebase />,
@@ -91,16 +94,16 @@ export default function TechInfo({
       name: "Tailwind CSS",
       text: [
         {
-          header: "Utility-First",
-          body: "Offers a highly customizable, low-level CSS framework that promotes rapid UI development without leaving your HTML.",
+          header: t("techInfo.tailwind.heading1"),
+          body: t("techInfo.tailwind.body1"),
         },
         {
-          header: "Responsive Design",
-          body: "Built-in utilities for responsive design allow for mobile-first development and easy screen size adjustments.",
+          header: t("techInfo.tailwind.heading2"),
+          body: t("techInfo.tailwind.body2"),
         },
         {
-          header: "Plugin System",
-          body: "Extensible architecture supports adding custom functionality and integrating with third-party tools.",
+          header: t("techInfo.tailwind.heading3"),
+          body: t("techInfo.tailwind.body3"),
         },
       ],
       image: <SiTailwindcss />,
@@ -109,16 +112,16 @@ export default function TechInfo({
       name: "Redux",
       text: [
         {
-          header: "Predictable State Container",
-          body: "Manages and centralizes application state, facilitating consistent behavior across JavaScript apps.",
+          header: t("techInfo.redux.heading1"),
+          body: t("techInfo.redux.body1"),
         },
         {
-          header: "DevTools",
-          body: "Enhanced development experience with features like time-travel debugging and state traceability.",
+          header: t("techInfo.redux.heading2"),
+          body: t("techInfo.redux.body2"),
         },
         {
-          header: "Community and Middleware Support",
-          body: "Extensive middleware support and a large community provide robust solutions for complex state management scenarios.",
+          header: t("techInfo.redux.heading3"),
+          body: t("techInfo.redux.body3"),
         },
       ],
       image: <SiRedux />,
@@ -127,16 +130,16 @@ export default function TechInfo({
       name: "React Router",
       text: [
         {
-          header: "Declarative Routing",
-          body: "Intuitive and dynamic routing API that manages navigation and view organization in React applications.",
+          header: t("techInfo.reactRouter.heading1"),
+          body: t("techInfo.reactRouter.body1"),
         },
         {
-          header: "Dynamic Route Matching",
-          body: "Lazily loads component trees on demand as routes are accessed, improving performance.",
+          header: t("techInfo.reactRouter.heading2"),
+          body: t("techInfo.reactRouter.body2"),
         },
         {
-          header: "Hooks API",
-          body: "Provides hooks for managing navigation and routing state directly from function components.",
+          header: t("techInfo.reactRouter.heading3"),
+          body: t("techInfo.reactRouter.body3"),
         },
       ],
       image: <SiReactrouter />,
@@ -168,9 +171,7 @@ export default function TechInfo({
       } h-52 opacity-70`}
     >
       <h3 className={`${getTextColor()} text-lg md:text-xl`}>
-        {dragStarted
-          ? "Drop logo here to display more tech info..."
-          : "Drag a logo here to display more tech info..."}
+        {dragStarted ? t("techInfo.drop") : t("techInfo.drag")}
       </h3>
     </div>
   ) : (
