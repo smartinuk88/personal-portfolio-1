@@ -50,7 +50,7 @@ function BurgerMenu({
               aria-label="Linkedin"
               rel="noreferrer"
               target="_blank"
-              href="https://www.linkedin.com/in/scott-martin-web-development/"
+              href="https://www.linkedin.com/in/scottmartinwebdevelopment/"
             >
               LinkedIn
             </a>

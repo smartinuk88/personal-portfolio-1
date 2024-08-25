@@ -13,7 +13,7 @@ function Footer() {
             aria-label="Linkedin"
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/scott-martin-6680b322a/"
+            href="https://www.linkedin.com/in/scottmartinwebdevelopment/"
           >
             <LinkedInIcon />
           </a>

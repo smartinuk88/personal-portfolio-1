@@ -50,7 +50,12 @@ function Header() {
               aria-label="CV on Google Drive"
               rel="noreferrer"
               target="_blank"
-              href="https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing"
+              href={
+                (i18n.language === "en" &&
+                  "https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing") ||
+                (i18n.language === "es" &&
+                  "https://drive.google.com/file/d/1VuKcy7aYzLxQNVmnw12-rr52iA5bQuEG/view?usp=sharing")
+              }
             >
               {t("about.cv")}
             </a>

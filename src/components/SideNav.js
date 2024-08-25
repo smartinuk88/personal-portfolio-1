@@ -54,7 +54,7 @@ function SideNav({ darkMode, toggleDarkModeHandler }) {
             aria-label="Linkedin"
             rel="noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/scott-martin-web-development/"
+            href="https://www.linkedin.com/in/scottmartinwebdevelopment/"
             className="h-full w-full flex items-center justify-center"
           >
             <LinkedInIcon
