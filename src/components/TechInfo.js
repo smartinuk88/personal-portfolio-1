@@ -6,6 +6,7 @@ import {
   SiReactrouter,
   SiRedux,
   SiTypescript,
+  SiGraphql,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
@@ -144,6 +145,24 @@ export default function TechInfo({
         },
       ],
       image: <SiReactrouter />,
+    },
+    graphQL: {
+      name: "GraphQL",
+      text: [
+        {
+          header: t("techInfo.graphQL.heading1"),
+          body: t("techInfo.graphQL.body1"),
+        },
+        {
+          header: t("techInfo.graphQL.heading2"),
+          body: t("techInfo.graphQL.body2"),
+        },
+        {
+          header: t("techInfo.graphQL.heading3"),
+          body: t("techInfo.graphQL.body3"),
+        },
+      ],
+      image: <SiGraphql />,
     },
   };
 

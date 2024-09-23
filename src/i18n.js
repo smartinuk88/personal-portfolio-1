@@ -148,6 +148,17 @@ const resources = {
           body3:
             "Provides hooks for managing navigation and routing state directly from function components.",
         },
+        graphQL: {
+          heading1: "Declarative Data Fetching",
+          body1:
+            "Allows clients to request specific data in a structured manner, enabling more precise and efficient data fetching compared to traditional REST APIs.",
+          heading2: "Single Endpoint Querying",
+          body2:
+            "Uses a single endpoint to send requests, which returns only the required data, minimizing over-fetching and under-fetching problems.",
+          heading3: "Strongly Typed Schema",
+          body3:
+            "Defines a strongly typed schema that specifies the structure of the API, ensuring that both clients and servers know exactly what data is available and how to interact with it.",
+        },
       },
       footer: "Copyright of Scott Martin 2024. All rights reserved",
     },
@@ -296,6 +307,17 @@ const resources = {
           heading3: "API de los Hooks",
           body3:
             "Proporciona hooks para gestionar la navegación y el estado del enrutamiento directamente desde componentes funcionales.",
+        },
+        graphQL: {
+          heading1: "Obtención de Datos Declarativa",
+          body1:
+            "Permite a los clientes solicitar datos específicos de manera estructurada, lo que posibilita una obtención de datos más precisa y eficiente en comparación con las APIs REST tradicionales.",
+          heading2: "Consultas en un Único Endpoint",
+          body2:
+            "Utiliza un único endpoint para enviar solicitudes, que devuelve solo los datos necesarios, minimizando los problemas de sobrecarga y subcarga de datos.",
+          heading3: "Esquema Fuertemente Tipado",
+          body3:
+            "Define un esquema fuertemente tipado que especifica la estructura de la API, asegurando que tanto los clientes como los servidores sepan exactamente qué datos están disponibles y cómo interactuar con ellos.",
         },
       },
       footer:
