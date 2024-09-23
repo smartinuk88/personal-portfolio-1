@@ -53,6 +53,21 @@ const resources = {
         body4:
           "Employs advanced Next.js routing capabilities, including parallel and intercepting routes, to ensure a seamless shopping experience, allowing users to manage their baskets without interrupting their browsing flow.",
       },
+      botify: {
+        title: "botify Chatbot Service",
+        heading1: "Real-Time AI Conversations Powered by OpenAI",
+        body1:
+          "Enables seamless 1-on-1 chat with AI agents, leveraging the OpenAI Completions API to provide real-time, intelligent responses to user queries. This dynamic interaction enhances user engagement by offering immediate assistance.",
+        heading2: "Advanced GraphQL Integration with StepZen",
+        body2:
+          "Utilizes StepZen to introspect and generate a GraphQL API from a PostgreSQL database, hosted on Neon. This ensures efficient and powerful data querying for managing chatbot prompts, admin details, and chat history.",
+        heading3: "Robust Authentication with Clerk and Google OAuth",
+        body3:
+          "Integrates Clerk Authentication to support secure user login, including Google OAuth, making it easy for admins to access their dashboard and manage chatbot creation, prompt editing, and chat history in a streamlined manner.",
+        heading4: "Optimized User Interface with Shadcn & Tailwind CSS",
+        body4:
+          "Combines the power of Shadcn components and Tailwind CSS to deliver a sleek, responsive, and visually appealing user experience. The frontend design is further enhanced with Next.js Server and Client Components for optimal performance.",
+      },
       techInfo: {
         drag: "Drag a logo here to display more tech info...",
         drop: "Drop logo here to display more tech info...",
@@ -185,6 +200,22 @@ const resources = {
         heading4: "Enrutamiento Dinámico y Diseño de UX",
         body4:
           "Emplea capacidades avanzadas de enrutamiento de Next.js, incluidas rutas paralelas e interceptadas, para garantizar una experiencia de compra fluida, permitiendo a los usuarios gestionar sus cestas sin interrumpir su flujo de navegación.",
+      },
+      botify: {
+        title: "botify: Servicio de Chatbot",
+        heading1:
+          "Conversaciones de IA en Tiempo Real con Tecnología de OpenAI",
+        body1:
+          "Permite chats fluidos 1 a 1 con agentes de IA, aprovechando la API de OpenAI Completions para proporcionar respuestas inteligentes en tiempo real a las consultas de los usuarios. Esta interacción dinámica mejora el compromiso del usuario al ofrecer asistencia inmediata.",
+        heading2: "Integración Avanzada de GraphQL con StepZen",
+        body2:
+          "Utiliza StepZen para inspeccionar y generar una API GraphQL a partir de una base de datos PostgreSQL alojada en Neon. Esto garantiza consultas de datos eficientes y poderosas para gestionar los prompts del chatbot, detalles del administrador y el historial de chats.",
+        heading3: "Autenticación Robusta con Clerk y Google OAuth",
+        body3:
+          "Integra la autenticación de Clerk para admitir un inicio de sesión seguro de usuarios, incluyendo Google OAuth, lo que facilita a los administradores acceder a su panel de control y gestionar la creación de chatbots, la edición de prompts y el historial de chats de manera eficiente.",
+        heading4: "Interfaz de Usuario Optimizada con Shadcn y Tailwind CSS",
+        body4:
+          "Combina el poder de los componentes de Shadcn y Tailwind CSS para ofrecer una experiencia de usuario atractiva, receptiva y visualmente agradable. El diseño del frontend se optimiza aún más con los componentes de servidor y cliente de Next.js para un rendimiento óptimo.",
       },
       techInfo: {
         drag: "Arrastra un logo aquí para mostrar más información técnica...",
