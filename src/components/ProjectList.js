@@ -1,7 +1,7 @@
 import ProjectRow from "./ProjectRow";
 import { useTranslation } from "react-i18next";
 import flashFluentImg1 from "../images/flashfluent-1.png";
-import amazonImg1 from "../images/amazon-1.png";
+import chatToPdfImg1 from "../images/chat-to-pdf-1.png";
 import botifyImg1 from "../images/botify-1.png";
 import { FaReact } from "react-icons/fa";
 import {
@@ -68,6 +68,21 @@ function ProjectList() {
     },
   ];
 
+  const chatToPdfBullets = [
+    {
+      header: t("chatToPdf.heading1"),
+      body: t("chatToPdf.body1"),
+    },
+    {
+      header: t("chatToPdf.heading2"),
+      body: t("chatToPdf.body2"),
+    },
+    {
+      header: t("chatToPdf.heading3"),
+      body: t("chatToPdf.body3"),
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-16 mb-20">
       <ProjectRow
@@ -79,12 +94,12 @@ function ProjectList() {
         liveLink="https://main--stunning-cupcake-ed88e2.netlify.app/"
       />
       <ProjectRow
-        title={t("amazon.title")}
-        bullets={amazonBullets}
-        image={amazonImg1}
+        title={t("chatToPdf.title")}
+        bullets={chatToPdfBullets}
+        image={chatToPdfImg1}
         techIcons={[SiNextdotjs, SiTypescript, SiTailwindcss]}
-        codeLink="https://github.com/smartinuk88/amazon-redesign-oxylabs-scraper"
-        liveLink="https://amazon-redesign-oxylabs-scraper.vercel.app/"
+        codeLink="https://github.com/smartinuk88/chat-with-pdf"
+        liveLink="https://chat-with-pdf-challenge-zeta.vercel.app/dashboard"
       />
       <ProjectRow
         title={t("botify.title")}

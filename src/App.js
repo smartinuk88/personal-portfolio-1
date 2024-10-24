@@ -9,14 +9,6 @@ import Footer from "./components/Footer";
 function App() {
   const [darkMode, setDarkMode] = useState(true);
 
-  // useEffect(() => {
-  //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  //     setDarkMode(true);
-  //   } else {
-  //     setDarkMode(false);
-  //   }
-  // }, []);
-
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -37,7 +29,7 @@ function App() {
         setDarkMode={setDarkMode}
         toggleDarkModeHandler={toggleDarkModeHandler}
       />
-      <div className="pt-28 px-8 pb-12 md:pl-12 md:pr-32 lg:pl-24 lg:pr-44">
+      <div className="pt-28 px-4 pb-12 md:pl-12 md:pr-32 lg:pl-24 lg:pr-44">
         <Header />
         <main>
           <ProjectList />

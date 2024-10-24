@@ -68,6 +68,18 @@ const resources = {
         body4:
           "Combines the power of Shadcn components and Tailwind CSS to deliver a sleek, responsive, and visually appealing user experience. The frontend design is further enhanced with Next.js Server and Client Components for optimal performance.",
       },
+      chatToPdf: {
+        title: "Chat To PDF",
+        heading1: "Real-Time Document Chat Powered by OpenAI and Langchain",
+        body1:
+          "Enables users to engage in seamless 1-on-1 conversations with documents, leveraging Pinecone for storing vector embeddings and Langchain with OpenAI for intelligent responses. This creates a dynamic interaction, allowing users to query and retrieve relevant information from uploaded PDFs.",
+        heading2: "Secure Document Upload and Storage with Firebase",
+        body2:
+          "Utilizes react-dropzone for effortless document upload, with Firebase handling secure file storage. This ensures a smooth and safe experience for managing user-uploaded PDFs and retrieving their contents during chat interactions.",
+        heading3: "Robust Authentication and Payments Integration",
+        body3:
+          "Integrates Clerk Authentication for secure user login, including Stripe payments for premium features. A custom hook handles Stripe webhooks, ensuring seamless and secure payment transactions while managing user subscriptions.",
+      },
       techInfo: {
         drag: "Drag a logo here to display more tech info...",
         drop: "Drop logo here to display more tech info...",
@@ -227,6 +239,19 @@ const resources = {
         heading4: "Interfaz de Usuario Optimizada con Shadcn y Tailwind CSS",
         body4:
           "Combina el poder de los componentes de Shadcn y Tailwind CSS para ofrecer una experiencia de usuario atractiva, receptiva y visualmente agradable. El diseño del frontend se optimiza aún más con los componentes de servidor y cliente de Next.js para un rendimiento óptimo.",
+      },
+      chatToPdf: {
+        title: "Chat To PDF",
+        heading1:
+          "Chat en Tiempo Real con Documentos Impulsado por OpenAI y Langchain",
+        body1:
+          "Permite a los usuarios interactuar de manera fluida con documentos, utilizando Pinecone para almacenar embeddings vectoriales y Langchain con OpenAI para generar respuestas inteligentes. Esta interacción dinámica facilita la consulta y recuperación de información relevante de los PDFs subidos.",
+        heading2: "Carga y Almacenamiento Seguro de Documentos con Firebase",
+        body2:
+          "Utiliza react-dropzone para una carga de documentos sin esfuerzo, con Firebase gestionando el almacenamiento seguro de archivos. Esto garantiza una experiencia fluida y segura para manejar los PDFs subidos y acceder a sus contenidos durante las interacciones de chat.",
+        heading3: "Autenticación Robusta e Integración de Pagos",
+        body3:
+          "Integra Clerk Authentication para un inicio de sesión seguro, incluyendo pagos a través de Stripe para funciones premium. Un hook personalizado maneja los webhooks de Stripe, garantizando transacciones de pago seguras y gestionando las suscripciones de los usuarios sin inconvenientes.",
       },
       techInfo: {
         drag: "Arrastra un logo aquí para mostrar más información técnica...",
