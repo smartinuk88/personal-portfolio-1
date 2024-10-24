@@ -8,12 +8,12 @@ const resources = {
   en: {
     translation: {
       contact: "Contact",
-      jobTitle: "Front-end Developer",
+      jobTitle: "Front-end React Developer",
       about: {
         heading: "About Me",
         body1: "Hi, I’m ",
         body2:
-          "a passionate front-end web developer living in the vibrant city of Murcia, Spain. My journey into the world of web development is fuelled by a blend of creativity and technical curiosity, which I honed through years of experience as a photographer and web administrator.",
+          "a passionate React web developer living in the vibrant city of Murcia, Spain. My journey into the world of web development is fuelled by a blend of creativity and technical curiosity, which I honed through years of experience as a photographer and web administrator.",
         body3:
           "Driven by a love for visual storytelling, my background in photography allows me to bring a unique aesthetic perspective to my development projects, emphasising clean, user-friendly interfaces that engage and communicate clearly. Transitioning to web development was a natural progression for me, combining my keen visual eye with technical skills to build seamless digital experiences.",
         body4:
@@ -178,12 +178,12 @@ const resources = {
   es: {
     translation: {
       contact: "Contacto",
-      jobTitle: "Desarrollador Front-end",
+      jobTitle: "Desarrollador front-end React",
       about: {
         heading: "Sobre Mí",
         body1: "Hola, soy ",
         body2:
-          "un apasionado desarrollador web front-end que vive en la vibrante ciudad de Murcia, España. Mi viaje en el mundo del desarrollo web está impulsado por una combinación de creatividad y curiosidad técnica, que construyé a través de años de experiencia como fotógrafo y administrador web.",
+          "un apasionado desarrollador web front-end con React que vive en la vibrante ciudad de Murcia, España. Mi viaje en el mundo del desarrollo web está impulsado por una combinación de creatividad y curiosidad técnica, que construyé a través de años de experiencia como fotógrafo y administrador web.",
         body3:
           "Impulsado por mi amor por la narración visual, mi formación en fotografía me permite aportar una perspectiva estética única a mis proyectos de desarrollo, enfatizando interfaces limpias y fáciles de usar que atraen y comunican claramente. La transición al desarrollo web fue una progresión natural para mí, combinando mi agudo ojo visual con habilidades técnicas para crear experiencias digitales sin fisuras.",
         body4:
