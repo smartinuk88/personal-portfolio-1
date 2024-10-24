@@ -30,25 +30,6 @@ function ProjectList() {
     },
   ];
 
-  const amazonBullets = [
-    {
-      header: t("amazon.heading1"),
-      body: t("amazon.body1"),
-    },
-    {
-      header: t("amazon.heading2"),
-      body: t("amazon.body2"),
-    },
-    {
-      header: t("amazon.heading3"),
-      body: t("amazon.body3"),
-    },
-    {
-      header: t("amazon.heading4"),
-      body: t("amazon.body4"),
-    },
-  ];
-
   const botifyBullets = [
     {
       header: t("botify.heading1"),
