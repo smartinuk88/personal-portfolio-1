@@ -8,7 +8,7 @@ const resources = {
   en: {
     translation: {
       contact: "Contact",
-      jobTitle: "Front-end React Developer",
+      jobTitle: "Full-Stack React Developer",
       about: {
         heading: "About Me",
         body1: "Hi, I’m ",
@@ -17,7 +17,7 @@ const resources = {
         body3:
           "Driven by a love for visual storytelling, my background in photography allows me to bring a unique aesthetic perspective to my development projects, emphasising clean, user-friendly interfaces that engage and communicate clearly. Transitioning to web development was a natural progression for me, combining my keen visual eye with technical skills to build seamless digital experiences.",
         body4:
-          "As a self-taught developer, I am committed to continuous learning and improvement. I thrive on challenges and enjoy staying updated with the latest industry trends and technologies. My current toolkit includes React, TailwindCSS, and Firebase, with a keen interest in expanding to full-stack development.",
+          "As a self-taught developer, I am committed to continuous learning and improvement. I thrive on challenges and enjoy staying updated with the latest industry trends and technologies. My current toolkit includes React, Next.js TailwindCSS, and Firebase.",
         body5:
           "Whether collaborating on projects or crafting individual sites, my goal is to create websites that not only look great but also provide functional, intuitive user experiences. I am eager to bring my creative flair and meticulous eye for detail to a dynamic team, where I can contribute to impactful and genuinely useful projects and grow alongside like-minded professionals.",
         cv: "CV right here",
@@ -178,16 +178,16 @@ const resources = {
   es: {
     translation: {
       contact: "Contacto",
-      jobTitle: "Desarrollador front-end React",
+      jobTitle: "Desarrollador full-stack React",
       about: {
         heading: "Sobre Mí",
         body1: "Hola, soy ",
         body2:
-          "un apasionado desarrollador web front-end con React que vive en la vibrante ciudad de Murcia, España. Mi viaje en el mundo del desarrollo web está impulsado por una combinación de creatividad y curiosidad técnica, que construyé a través de años de experiencia como fotógrafo y administrador web.",
+          "un apasionado desarrollador web con React que vive en la vibrante ciudad de Murcia, España. Mi viaje en el mundo del desarrollo web está impulsado por una combinación de creatividad y curiosidad técnica, que construyé a través de años de experiencia como fotógrafo y administrador web.",
         body3:
           "Impulsado por mi amor por la narración visual, mi formación en fotografía me permite aportar una perspectiva estética única a mis proyectos de desarrollo, enfatizando interfaces limpias y fáciles de usar que atraen y comunican claramente. La transición al desarrollo web fue una progresión natural para mí, combinando mi agudo ojo visual con habilidades técnicas para crear experiencias digitales sin fisuras.",
         body4:
-          "Como desarrollador autodidacta, estoy comprometido con el aprendizaje continuo y la mejora. Me encantan los desafíos y disfruto manteniéndome actualizado con las últimas tendencias y tecnologías de la industria. Mi conjunto de herramientas actual incluye React, TailwindCSS y Firebase, con un gran interés en expandirme al desarrollo full-stack.",
+          "Como desarrollador autodidacta, estoy comprometido con el aprendizaje continuo y la mejora. Me encantan los desafíos y disfruto manteniéndome actualizado con las últimas tendencias y tecnologías de la industria. Mi conjunto de herramientas actual incluye React, Next.js, TailwindCSS y Firebase.",
         body5:
           "Tanto colaborando en proyectos como creando sitios individuales, mi objetivo es crear sitios web que no solo se vean geniales, sino que también proporcionen experiencias de usuario funcionales e intuitivas. Estoy ansioso por aportar mi toque creativo y mi meticuloso ojo para los detalles a un equipo dinámico, donde pueda contribuir a proyectos impactantes y verdaderamente útiles y crecer junto a profesionales afines.",
         cv: "CV justo aquí",
