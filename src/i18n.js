@@ -8,18 +8,18 @@ const resources = {
   en: {
     translation: {
       contact: "Contact",
-      jobTitle: "Full-Stack React Developer",
+      jobTitle: "Front-End React Developer",
       about: {
         heading: "About Me",
         body1: "Hi, I’m ",
         body2:
-          "a passionate React web developer living in the vibrant city of Murcia, Spain. My journey into the world of web development is fuelled by a blend of creativity and technical curiosity, which I honed through years of experience as a photographer and web administrator.",
+          "a front-end React developer and content enthusiast based in Murcia, Spain. With a background in photography and e-commerce, I bring a visual and user-centric mindset to every project I work on - building clean, responsive, and purposeful digital experiences with modern tools like React, Next.js, Tailwind CSS, and Firebase.",
         body3:
-          "Driven by a love for visual storytelling, my background in photography allows me to bring a unique aesthetic perspective to my development projects, emphasising clean, user-friendly interfaces that engage and communicate clearly. Transitioning to web development was a natural progression for me, combining my keen visual eye with technical skills to build seamless digital experiences.",
+          "My journey into tech was shaped by a love of visual storytelling and a belief that good design and usability go hand in hand. During my time as an e-commerce web administrator, I helped streamline content workflows, enhance visual presentation, and improve product listing efficiency - supporting a major increase in online sales during the store’s early growth phase. That experience, combined with my growing knowledge of SEO, analytics, and content strategy, gives me a holistic view of how design, code, and engaging copy can work together to drive impact.",
         body4:
-          "As a self-taught developer, I am committed to continuous learning and improvement. I thrive on challenges and enjoy staying updated with the latest industry trends and technologies. My current toolkit includes React, Next.js TailwindCSS, and Firebase.",
+          "Outside of development, ’ve been exploring writing as a creative outlet - developing a small blog focused on plant-based living and working on a children’s story that encourages curiosity and care for the natural world.",
         body5:
-          "Whether collaborating on projects or crafting individual sites, my goal is to create websites that not only look great but also provide functional, intuitive user experiences. I am eager to bring my creative flair and meticulous eye for detail to a dynamic team, where I can contribute to impactful and genuinely useful projects and grow alongside like-minded professionals.",
+          "I’m especially drawn to purpose-led teams and organisations focused on sustainability, ethical design, or education. Whether through thoughtful user interfaces or meaningful written content, I aim to contribute to work that creates lasting, positive impact—and I’m excited to continue growing in that direction.",
         cv: "CV right here",
       },
       projectRow: {
@@ -178,18 +178,21 @@ const resources = {
   es: {
     translation: {
       contact: "Contacto",
-      jobTitle: "Desarrollador full-stack React",
+      jobTitle: "Desarrollador front-end React",
       about: {
         heading: "Sobre Mí",
         body1: "Hola, soy ",
         body2:
-          "un apasionado desarrollador web con React que vive en la vibrante ciudad de Murcia, España. Mi viaje en el mundo del desarrollo web está impulsado por una combinación de creatividad y curiosidad técnica, que construyé a través de años de experiencia como fotógrafo y administrador web.",
+          "Desarrollador front-end especializado en React y entusiasta del contenido, con base en Murcia, España. Con una formación en fotografía y comercio electrónico, aporto una mentalidad visual y centrada en el usuario a cada proyecto en el que trabajo, creando experiencias digitales limpias, responsivas y con propósito utilizando herramientas modernas como React, Next.js, Tailwind CSS y Firebase.",
+
         body3:
-          "Impulsado por mi amor por la narración visual, mi formación en fotografía me permite aportar una perspectiva estética única a mis proyectos de desarrollo, enfatizando interfaces limpias y fáciles de usar que atraen y comunican claramente. La transición al desarrollo web fue una progresión natural para mí, combinando mi agudo ojo visual con habilidades técnicas para crear experiencias digitales sin fisuras.",
+          "Mi camino hacia la tecnología estuvo guiado por mi pasión por la narrativa visual y la convicción de que el buen diseño y la usabilidad van de la mano. Durante mi etapa como administrador web de e-commerce, ayudé a optimizar los flujos de trabajo de contenido, mejorar la presentación visual y aumentar la eficiencia en la publicación de productos, contribuyendo a un notable crecimiento en las ventas online durante la fase inicial de la tienda. Esa experiencia, junto con mis conocimientos crecientes en SEO, analítica y estrategia de contenido, me brinda una visión integral de cómo el diseño, el código y un texto atractivo pueden unirse para generar impacto.",
+
         body4:
-          "Como desarrollador autodidacta, estoy comprometido con el aprendizaje continuo y la mejora. Me encantan los desafíos y disfruto manteniéndome actualizado con las últimas tendencias y tecnologías de la industria. Mi conjunto de herramientas actual incluye React, Next.js, TailwindCSS y Firebase.",
+          "Fuera del desarrollo, he estado explorando la escritura como vía creativa: desarrollando un pequeño blog centrado en el estilo de vida basado en plantas y trabajando en un cuento infantil que fomente la curiosidad y el respeto por el mundo natural.",
+
         body5:
-          "Tanto colaborando en proyectos como creando sitios individuales, mi objetivo es crear sitios web que no solo se vean geniales, sino que también proporcionen experiencias de usuario funcionales e intuitivas. Estoy ansioso por aportar mi toque creativo y mi meticuloso ojo para los detalles a un equipo dinámico, donde pueda contribuir a proyectos impactantes y verdaderamente útiles y crecer junto a profesionales afines.",
+          "Me atraen especialmente los equipos y organizaciones con propósito, centrados en la sostenibilidad, el diseño ético o la educación. Ya sea mediante interfaces de usuario bien pensadas o contenido escrito con intención, mi objetivo es contribuir a trabajos que generen un impacto positivo y duradero - y me entusiasma seguir creciendo en esa dirección.",
         cv: "CV justo aquí",
       },
       projectRow: {
