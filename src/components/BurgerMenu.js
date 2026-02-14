@@ -73,9 +73,9 @@ function BurgerMenu({
               rel="noreferrer"
               href={
                 (i18n.language === "en" &&
-                  "https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing") ||
+                  "https://drive.google.com/file/d/1G2eEZa1JtvYbY08qskhtTuoz7G4DbxOI/view?usp=sharing") ||
                 (i18n.language === "es" &&
-                  "https://drive.google.com/file/d/1VuKcy7aYzLxQNVmnw12-rr52iA5bQuEG/view?usp=sharing")
+                  "https://drive.google.com/file/d/10j_6COPhR3Z4vHi9ayEehKc6I7bjUe5d/view?usp=sharing")
               }
             >
               CV <DownloadIcon />

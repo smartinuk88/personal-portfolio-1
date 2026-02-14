@@ -44,9 +44,9 @@ function TopNav() {
               className="px-4 md:px-8 text-xl no-underline text-lm-custom-black dark:text-dm-light h-full w-full flex items-center justify-center"
               href={
                 (i18n.language === "en" &&
-                  "https://drive.google.com/file/d/1z58kSN6Vb7DArjCsxouTKXJjwVDxLKmk/view?usp=sharing") ||
+                  "https://drive.google.com/file/d/1G2eEZa1JtvYbY08qskhtTuoz7G4DbxOI/view?usp=sharing") ||
                 (i18n.language === "es" &&
-                  "https://drive.google.com/file/d/1VuKcy7aYzLxQNVmnw12-rr52iA5bQuEG/view?usp=sharing")
+                  "https://drive.google.com/file/d/10j_6COPhR3Z4vHi9ayEehKc6I7bjUe5d/view?usp=sharing")
               }
               target="_blank"
               rel="noreferrer"
