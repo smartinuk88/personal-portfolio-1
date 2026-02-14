@@ -8,12 +8,12 @@ const resources = {
   en: {
     translation: {
       contact: "Contact",
-      jobTitle: "Front-End React Developer",
+      jobTitle: "Full Stack Developer",
       about: {
         heading: "About Me",
         body1: "Hi, I’m ",
         body2:
-          "a front-end React developer and content enthusiast based in Murcia, Spain. With a background in photography and e-commerce, I bring a visual and user-centric mindset to every project I work on - building clean, responsive, and purposeful digital experiences with modern tools like React, Next.js, Tailwind CSS, and Firebase.",
+          "a full stack developer and content enthusiast based in Murcia, Spain. With a background in photography and e-commerce, I bring a visual and user-centric mindset to every project I work on - building clean, responsive, and purposeful digital experiences with modern tools like React, Next.js, Tailwind CSS, and Firebase.",
         body3:
           "My journey into tech was shaped by a love of visual storytelling and a belief that good design and usability go hand in hand. During my time as an e-commerce web administrator, I helped streamline content workflows, enhance visual presentation, and improve product listing efficiency - supporting a major increase in online sales during the store’s early growth phase. That experience, combined with my growing knowledge of SEO, analytics, and content strategy, gives me a holistic view of how design, code, and engaging copy can work together to drive impact.",
         body4:
@@ -178,12 +178,12 @@ const resources = {
   es: {
     translation: {
       contact: "Contacto",
-      jobTitle: "Desarrollador front-end React",
+      jobTitle: "Desarrollador Full Stack",
       about: {
         heading: "Sobre Mí",
         body1: "Hola, soy ",
         body2:
-          "Desarrollador front-end especializado en React y entusiasta del contenido, con base en Murcia, España. Con una formación en fotografía y comercio electrónico, aporto una mentalidad visual y centrada en el usuario a cada proyecto en el que trabajo, creando experiencias digitales limpias, responsivas y con propósito utilizando herramientas modernas como React, Next.js, Tailwind CSS y Firebase.",
+          "Desarrollador full stack y entusiasta del contenido, con base en Murcia, España. Con una formación en fotografía y comercio electrónico, aporto una mentalidad visual y centrada en el usuario a cada proyecto en el que trabajo, creando experiencias digitales limpias, responsivas y con propósito utilizando herramientas modernas como React, Next.js, Tailwind CSS y Firebase.",
 
         body3:
           "Mi camino hacia la tecnología estuvo guiado por mi pasión por la narrativa visual y la convicción de que el buen diseño y la usabilidad van de la mano. Durante mi etapa como administrador web de e-commerce, ayudé a optimizar los flujos de trabajo de contenido, mejorar la presentación visual y aumentar la eficiencia en la publicación de productos, contribuyendo a un notable crecimiento en las ventas online durante la fase inicial de la tienda. Esa experiencia, junto con mis conocimientos crecientes en SEO, analítica y estrategia de contenido, me brinda una visión integral de cómo el diseño, el código y un texto atractivo pueden unirse para generar impacto.",

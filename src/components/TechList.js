@@ -8,7 +8,6 @@ import {
   SiTailwindcss,
   SiReactrouter,
   SiTypescript,
-  SiGraphql,
 } from "react-icons/si";
 import Draggable from "./Draggable";
 import Droppable from "./Droppable";
@@ -72,9 +71,6 @@ function TechList() {
           </Draggable>
           <Draggable id="reactRouter" className="cursor-grab">
             <SiReactrouter />
-          </Draggable>
-          <Draggable id="graphQL" className="cursor-grab">
-            <SiGraphql />
           </Draggable>
         </div>
 
