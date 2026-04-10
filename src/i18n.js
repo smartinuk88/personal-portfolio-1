@@ -149,27 +149,49 @@ const resources = {
           body3:
             "Extensive middleware support and a large community provide robust solutions for complex state management scenarios.",
         },
-        reactRouter: {
-          heading1: "Declarative Routing",
+        postgresql: {
+          heading1: "Relational Database",
           body1:
-            "Intuitive and dynamic routing API that manages navigation and view organization in React applications.",
-          heading2: "Dynamic Route Matching",
+            "PostgreSQL is a powerful open-source relational database. Data is structured into tables with defined schemas and relationships, supporting complex queries, ACID transactions, and JSON data alongside traditional relational data.",
+          heading2: "PostGIS Extension",
           body2:
-            "Lazily loads component trees on demand as routes are accessed, improving performance.",
-          heading3: "Hooks API",
+            "PostGIS extends PostgreSQL with geographic data types and spatial query functions, enabling storage and querying of geometric data such as polygons, points and lines — powering features like farm boundary mapping and proximity searches.",
+          heading3: "Prisma ORM",
           body3:
-            "Provides hooks for managing navigation and routing state directly from function components.",
+            "Prisma provides a type-safe query builder that sits between the application and PostgreSQL, auto-generating a fully typed client from the database schema and handling migrations as the data model evolves.",
         },
-        graphQL: {
-          heading1: "Declarative Data Fetching",
+        nodejs: {
+          heading1: "Server-Side JavaScript",
           body1:
-            "Allows clients to request specific data in a structured manner, enabling more precise and efficient data fetching compared to traditional REST APIs.",
-          heading2: "Single Endpoint Querying",
+            "Node.js enables JavaScript to run on the server, allowing full-stack development in a single language. Its non-blocking, event-driven architecture makes it well-suited for building scalable APIs and real-time applications.",
+          heading2: "REST API Development",
           body2:
-            "Uses a single endpoint to send requests, which returns only the required data, minimizing over-fetching and under-fetching problems.",
-          heading3: "Strongly Typed Schema",
+            "Node.js is commonly used to build RESTful APIs — defining endpoints that handle HTTP requests, validate input, interact with databases, and return structured responses with appropriate status codes.",
+          heading3: "Next.js Integration",
           body3:
-            "Defines a strongly typed schema that specifies the structure of the API, ensuring that both clients and servers know exactly what data is available and how to interact with it.",
+            "In a Next.js project, Node.js powers the server layer — handling Server Components, Server Actions, API routes, and middleware, enabling a unified full-stack architecture within a single codebase.",
+        },
+        leaflet: {
+          heading1: "Open-Source Mapping",
+          body1:
+            "Leaflet is a lightweight, open-source JavaScript library for interactive maps. Unlike commercial alternatives, it works with free tile providers like OpenStreetMap, making it ideal for projects where cost and flexibility matter.",
+          heading2: "GeoJSON Support",
+          body2:
+            "Leaflet natively understands GeoJSON — the standard format for geographic data. This makes it straightforward to render polygons, points and lines stored in PostGIS directly on an interactive map.",
+          heading3: "React Leaflet",
+          body3:
+            "React Leaflet wraps Leaflet's imperative API in declarative React components, allowing maps to be composed using familiar patterns like props, state and hooks — including useMap() for programmatic control of the map instance.",
+        },
+        jest: {
+          heading1: "JavaScript Testing Framework",
+          body1:
+            "Jest is the most widely used testing framework in the JavaScript ecosystem. It provides a complete solution for writing and running tests, with built-in assertion libraries, mocking capabilities, and code coverage reporting.",
+          heading2: "Testing Library Integration",
+          body2:
+            "Combined with Testing Library, Jest enables component testing that mirrors real user behaviour — querying elements by role, text and label rather than implementation details, resulting in more meaningful and maintainable tests.",
+          heading3: "Test Coverage",
+          body3:
+            "Jest's built-in coverage reporting identifies untested code paths across statements, branches, functions and lines — helping maintain confidence in the codebase as it grows and evolves.",
         },
       },
       footer: "Copyright of Scott Martin 2024. All rights reserved",
@@ -325,27 +347,49 @@ const resources = {
           body3:
             "Un amplio soporte de middleware y una gran comunidad ofrecen soluciones robustas para escenarios complejos de gestión de estado.",
         },
-        reactRouter: {
-          heading1: "Enrutamiento declarativo",
+        postgresql: {
+          heading1: "Base de Datos Relacional",
           body1:
-            "API de enrutamiento intuitivo y dinámico que gestiona la navegación y la organización de vistas en aplicaciones React.",
-          heading2: "Coincidencia dinámica de rutas",
+            "PostgreSQL es una potente base de datos relacional de código abierto. Los datos se estructuran en tablas con esquemas y relaciones definidas, con soporte para consultas complejas, transacciones ACID y datos JSON junto a datos relacionales tradicionales.",
+          heading2: "Extensión PostGIS",
           body2:
-            "Carga perezosa de árboles de componentes a petición al acceder a las rutas, mejorando el rendimiento.",
-          heading3: "API de los Hooks",
+            "PostGIS amplía PostgreSQL con tipos de datos geográficos y funciones de consulta espacial, permitiendo el almacenamiento y consulta de geometrías como polígonos, puntos y líneas — ideal para funcionalidades como el mapeo de parcelas agrícolas y búsquedas por proximidad.",
+          heading3: "Prisma ORM",
           body3:
-            "Proporciona hooks para gestionar la navegación y el estado del enrutamiento directamente desde componentes funcionales.",
+            "Prisma proporciona un constructor de consultas con seguridad de tipos que actúa como intermediario entre la aplicación y PostgreSQL, generando automáticamente un cliente tipado a partir del esquema de la base de datos y gestionando las migraciones a medida que el modelo de datos evoluciona.",
         },
-        graphQL: {
-          heading1: "Obtención de Datos Declarativa",
+        nodejs: {
+          heading1: "JavaScript en el Servidor",
           body1:
-            "Permite a los clientes solicitar datos específicos de manera estructurada, lo que posibilita una obtención de datos más precisa y eficiente en comparación con las APIs REST tradicionales.",
-          heading2: "Consultas en un Único Endpoint",
+            "Node.js permite ejecutar JavaScript en el servidor, posibilitando el desarrollo full-stack en un único lenguaje. Su arquitectura no bloqueante y orientada a eventos lo hace especialmente adecuado para construir APIs escalables y aplicaciones en tiempo real.",
+          heading2: "Desarrollo de APIs REST",
           body2:
-            "Utiliza un único endpoint para enviar solicitudes, que devuelve solo los datos necesarios, minimizando los problemas de sobrecarga y subcarga de datos.",
-          heading3: "Esquema Fuertemente Tipado",
+            "Node.js se utiliza habitualmente para construir APIs RESTful — definiendo endpoints que gestionan peticiones HTTP, validan entradas, interactúan con bases de datos y devuelven respuestas estructuradas con los códigos de estado apropiados.",
+          heading3: "Integración con Next.js",
           body3:
-            "Define un esquema fuertemente tipado que especifica la estructura de la API, asegurando que tanto los clientes como los servidores sepan exactamente qué datos están disponibles y cómo interactuar con ellos.",
+            "En un proyecto Next.js, Node.js potencia la capa de servidor — gestionando Server Components, Server Actions, rutas API y middleware, permitiendo una arquitectura full-stack unificada dentro de un único proyecto.",
+        },
+        leaflet: {
+          heading1: "Mapas de Código Abierto",
+          body1:
+            "Leaflet es una librería JavaScript ligera y de código abierto para mapas interactivos. A diferencia de alternativas comerciales, funciona con proveedores de tiles gratuitos como OpenStreetMap, lo que la hace ideal para proyectos donde el coste y la flexibilidad son importantes.",
+          heading2: "Soporte para GeoJSON",
+          body2:
+            "Leaflet entiende de forma nativa GeoJSON — el formato estándar para datos geográficos. Esto facilita renderizar polígonos, puntos y líneas almacenados en PostGIS directamente sobre un mapa interactivo.",
+          heading3: "React Leaflet",
+          body3:
+            "React Leaflet envuelve la API imperativa de Leaflet en componentes declarativos de React, permitiendo componer mapas usando patrones familiares como props, estado y hooks — incluyendo useMap() para el control programático de la instancia del mapa.",
+        },
+        jest: {
+          heading1: "Framework de Testing para JavaScript",
+          body1:
+            "Jest es el framework de testing más utilizado en el ecosistema JavaScript. Proporciona una solución completa para escribir y ejecutar tests, con librerías de aserciones integradas, capacidades de mocking e informes de cobertura de código.",
+          heading2: "Integración con Testing Library",
+          body2:
+            "Combinado con Testing Library, Jest permite testear componentes reflejando el comportamiento real del usuario — consultando elementos por rol, texto y etiqueta en lugar de detalles de implementación, resultando en tests más significativos y mantenibles.",
+          heading3: "Cobertura de Tests",
+          body3:
+            "El sistema de cobertura integrado de Jest identifica las partes del código no testeadas a nivel de sentencias, ramas, funciones y líneas — ayudando a mantener la confianza en el proyecto a medida que crece y evoluciona.",
         },
       },
       footer:

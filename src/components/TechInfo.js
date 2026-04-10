@@ -3,9 +3,12 @@ import {
   SiNextdotjs,
   SiFirebase,
   SiTailwindcss,
-  SiReactrouter,
   SiRedux,
   SiTypescript,
+  SiPostgresql,
+  SiNodedotjs,
+  SiLeaflet,
+  SiJest,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
@@ -127,23 +130,77 @@ export default function TechInfo({
       ],
       image: <SiRedux />,
     },
-    reactRouter: {
-      name: "React Router",
+    postgresql: {
+      name: "PostreSQL",
       text: [
         {
-          header: t("techInfo.reactRouter.heading1"),
-          body: t("techInfo.reactRouter.body1"),
+          header: t("techInfo.postgresql.heading1"),
+          body: t("techInfo.postgresql.body1"),
         },
         {
-          header: t("techInfo.reactRouter.heading2"),
-          body: t("techInfo.reactRouter.body2"),
+          header: t("techInfo.postgresql.heading2"),
+          body: t("techInfo.postgresql.body2"),
         },
         {
-          header: t("techInfo.reactRouter.heading3"),
-          body: t("techInfo.reactRouter.body3"),
+          header: t("techInfo.postgresql.heading3"),
+          body: t("techInfo.postgresql.body3"),
         },
       ],
-      image: <SiReactrouter />,
+      image: <SiPostgresql />,
+    },
+    nodejs: {
+      name: "Node.js",
+      text: [
+        {
+          header: t("techInfo.nodejs.heading1"),
+          body: t("techInfo.nodejs.body1"),
+        },
+        {
+          header: t("techInfo.nodejs.heading2"),
+          body: t("techInfo.nodejs.body2"),
+        },
+        {
+          header: t("techInfo.nodejs.heading3"),
+          body: t("techInfo.nodejs.body3"),
+        },
+      ],
+      image: <SiNodedotjs />,
+    },
+    leaflet: {
+      name: "Leaflet",
+      text: [
+        {
+          header: t("techInfo.leaflet.heading1"),
+          body: t("techInfo.leaflet.body1"),
+        },
+        {
+          header: t("techInfo.leaflet.heading2"),
+          body: t("techInfo.leaflet.body2"),
+        },
+        {
+          header: t("techInfo.leaflet.heading3"),
+          body: t("techInfo.leaflet.body3"),
+        },
+      ],
+      image: <SiLeaflet />,
+    },
+    jest: {
+      name: "Jest",
+      text: [
+        {
+          header: t("techInfo.jest.heading1"),
+          body: t("techInfo.jest.body1"),
+        },
+        {
+          header: t("techInfo.jest.heading2"),
+          body: t("techInfo.jest.body2"),
+        },
+        {
+          header: t("techInfo.jest.heading3"),
+          body: t("techInfo.jest.body3"),
+        },
+      ],
+      image: <SiJest />,
     },
   };
 

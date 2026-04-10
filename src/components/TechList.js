@@ -6,8 +6,11 @@ import {
   SiNextdotjs,
   SiRedux,
   SiTailwindcss,
-  SiReactrouter,
   SiTypescript,
+  SiPostgresql,
+  SiNodedotjs,
+  SiLeaflet,
+  SiJest,
 } from "react-icons/si";
 import Draggable from "./Draggable";
 import Droppable from "./Droppable";
@@ -69,8 +72,17 @@ function TechList() {
           <Draggable id="redux" className="cursor-grab">
             <SiRedux />
           </Draggable>
-          <Draggable id="reactRouter" className="cursor-grab">
-            <SiReactrouter />
+          <Draggable id="postgresql" className="cursor-grab">
+            <SiPostgresql />
+          </Draggable>
+          <Draggable id="nodejs" className="cursor-grab">
+            <SiNodedotjs />
+          </Draggable>
+          <Draggable id="leaflet" className="cursor-grab">
+            <SiLeaflet />
+          </Draggable>
+          <Draggable id="jest" className="cursor-grab">
+            <SiJest />
           </Draggable>
         </div>
 
