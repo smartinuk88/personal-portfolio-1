@@ -80,6 +80,18 @@ const resources = {
         body3:
           "Integrates Clerk Authentication for secure user login, including Stripe payments for premium features. A custom hook handles Stripe webhooks, ensuring seamless and secure payment transactions while managing user subscriptions.",
       },
+      agriculture: {
+        title: "Agricultural Land Management Platform",
+        heading1: "Interactive Map",
+        body1:
+          "nteractive map interface built with React Leaflet and OpenStreetMap, rendering agricultural parcels and sub-plots as GeoJSON polygons with hover tooltips showing crop data, planting and harvest dates",
+        heading2: "Geographic data",
+        body2:
+          "PostgreSQL with PostGIS extension for geographic data storage and spatial queries, accessed via Prisma ORM for standard operations and raw SQL for PostGIS-specific functions such as ST_AsGeoJSON and ST_GeomFromGeoJSON",
+        heading3: "Modern Next.js",
+        body3:
+          "Full-stack Next.js App Router application with TypeScript, Server Components, Server Actions, REST API with input validation, debounced search with URL-based state, CRUD operations, and a Jest + Testing Library test suite",
+      },
       techInfo: {
         drag: "Drag a logo here to display more tech info...",
         drop: "Drop logo here to display more tech info...",
@@ -277,6 +289,18 @@ const resources = {
         heading3: "Autenticación Robusta e Integración de Pagos",
         body3:
           "Integra Clerk Authentication para un inicio de sesión seguro, incluyendo pagos a través de Stripe para funciones premium. Un hook personalizado maneja los webhooks de Stripe, garantizando transacciones de pago seguras y gestionando las suscripciones de los usuarios sin inconvenientes.",
+      },
+      agriculture: {
+        title: "Plataforma de Gestión de Parcelas Agrícolas",
+        heading1: "Mapa interactivo",
+        body1:
+          "Interfaz construida con React Leaflet y OpenStreetMap, renderizando parcelas agrícolas y recintos como polígonos GeoJSON con tooltips al hover que muestran datos de cultivo, fechas de siembra y cosecha",
+        heading2: "Almacenamiento de datos geográficos",
+        body2:
+          "PostgreSQL con la extensión PostGIS para almacenamiento de datos geográficos y consultas espaciales, accedido mediante Prisma ORM para operaciones estándar y SQL directo para funciones específicas de PostGIS como ST_AsGeoJSON y ST_GeomFromGeoJSON",
+        heading3: "Next.js moderno",
+        body3:
+          "Aplicación full-stack con Next.js App Router y TypeScript, incluyendo Server Components, Server Actions, API REST con validación de parámetros, búsqueda con debouncing y estado basado en URL, operaciones CRUD, y suite de tests con Jest y Testing Library",
       },
       techInfo: {
         drag: "Arrastra un logo aquí para mostrar más información técnica...",

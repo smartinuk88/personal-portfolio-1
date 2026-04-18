@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import flashFluentImg1 from "../images/flashfluent-1.png";
 import chatToPdfImg1 from "../images/chat-to-pdf-1.png";
 import botifyImg1 from "../images/botify-1.png";
+import agricultureImg1 from "../images/agriculture.png";
 import { FaReact } from "react-icons/fa";
 import {
   SiFirebase,
@@ -10,6 +11,10 @@ import {
   SiReactrouter,
   SiTypescript,
   SiNextdotjs,
+  SiPostgresql,
+  SiNodedotjs,
+  SiLeaflet,
+  SiJest,
 } from "react-icons/si";
 
 function ProjectList() {
@@ -64,8 +69,38 @@ function ProjectList() {
     },
   ];
 
+  const agricultureBullets = [
+    {
+      header: t("agriculture.heading1"),
+      body: t("agriculture.body1"),
+    },
+    {
+      header: t("agriculture.heading2"),
+      body: t("agriculture.body2"),
+    },
+    {
+      header: t("agriculture.heading3"),
+      body: t("agriculture.body3"),
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-16 mb-20">
+      <ProjectRow
+        title={t("agriculture.title")}
+        bullets={agricultureBullets}
+        image={agricultureImg1}
+        techIcons={[
+          SiNextdotjs,
+          SiNodedotjs,
+          SiPostgresql,
+          SiTailwindcss,
+          SiLeaflet,
+          SiJest,
+        ]}
+        codeLink="https://github.com/smartinuk88/prueba-tecnica-sae"
+        liveLink="https://prueba-tecnica-sae-azo4.vercel.app/"
+      />
       <ProjectRow
         title={t("flashFluent.title")}
         bullets={flashFluentBullets}
